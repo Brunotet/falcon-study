@@ -4,11 +4,14 @@ on:
   workflow_dispatch:
     inputs:
       mega_url:
-        description: MEGA folder or file link (one subfolder per run)
+        description: MEGA folder link (root link works best)
         required: true
       label:
         description: Output folder name, e.g. S1
         required: true
+      list_only:
+        description: "true = only list the folder tree, download nothing"
+        default: "false"
       whisper_model:
         description: tiny, base or small
         default: small
@@ -28,6 +31,7 @@ jobs:
       LABEL: ${{ inputs.label }}
       MODEL: ${{ inputs.whisper_model }}
       CALLBACK: ${{ inputs.callback_url }}
+      LIST_ONLY: ${{ inputs.list_only }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -38,12 +42,24 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y ffmpeg megatools
           pip install faster-whisper
+          wget -q https://mega.nz/linux/repo/xUbuntu_24.04/amd64/megacmd-xUbuntu_24.04_amd64.deb
+          sudo apt-get install -y ./megacmd-xUbuntu_24.04_amd64.deb || true
+      - name: List folder (megatools and MEGAcmd)
+        run: |
+          mkdir -p status
+          megatools --version | head -1 > status/tree-$LABEL-megatools.txt || true
+          megatools ls -R "$MEGA_URL" >> status/tree-$LABEL-megatools.txt 2>&1 || true
+          mega-login "$MEGA_URL" > status/tree-$LABEL-megacmd.txt 2>&1 || true
+          mega-ls -lR >> status/tree-$LABEL-megacmd.txt 2>&1 || true
+          wc -l status/tree-$LABEL-*.txt
       - name: Download from MEGA
+        if: env.LIST_ONLY != 'true'
         run: |
           mkdir raw
           megatools dl --path raw "$MEGA_URL"
           du -sh raw || true
       - name: Transcribe, screenshot, pair
+        if: env.LIST_ONLY != 'true'
         run: python study/process.py raw "out/$LABEL" "$MODEL"
       - name: Commit results
         if: always()
@@ -56,6 +72,6 @@ jobs:
           git pull --rebase origin main || true
           git push
       - name: Callback
-        if: always() && env.CALLBACK != ''
+        if: always() && env.CALLBACK != '' && env.LIST_ONLY != 'true'
         run: |
           curl -sS -X POST -H "Content-Type: application/json" --data @status/$LABEL.json "$CALLBACK" || true
