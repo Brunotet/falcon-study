@@ -1,0 +1,57 @@
+{
+ "label": "S1",
+ "model": "small",
+ "videos": [
+  {
+   "name": "Quick Tips - S1E1 - Nature",
+   "minutes": 8.2,
+   "segments": 178,
+   "frames": 11,
+   "seconds_taken": 191
+  },
+  {
+   "name": "Quick Tips - S1E2 - Patterns within Patterns",
+   "minutes": 11.2,
+   "segments": 190,
+   "frames": 13,
+   "seconds_taken": 262
+  },
+  {
+   "name": "Quick Tips - S1E3 - Multi Touch Confirmation",
+   "minutes": 8.6,
+   "segments": 201,
+   "frames": 11,
+   "seconds_taken": 200
+  },
+  {
+   "name": "Quick Tips - S1E4 - Candlesticks & The Override",
+   "minutes": 12.9,
+   "segments": 335,
+   "frames": 17,
+   "seconds_taken": 315
+  },
+  {
+   "name": "Quick Tips - S1E5 - Phase Identification",
+   "minutes": 14.9,
+   "segments": 318,
+   "frames": 12,
+   "seconds_taken": 391
+  },
+  {
+   "name": "Quick Tips - S1E6 - Forecasting",
+   "minutes": 21.6,
+   "segments": 263,
+   "frames": 29,
+   "seconds_taken": 515
+  },
+  {
+   "name": "Quick Tips - S1E7 - Watchlists and the 3 Step Process",
+   "minutes": 12.0,
+   "segments": 155,
+   "frames": 16,
+   "seconds_taken": 287
+  }
+ ],
+ "errors": [],
+ "found": 7
+}
