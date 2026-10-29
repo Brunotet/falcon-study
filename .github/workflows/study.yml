@@ -4,7 +4,10 @@ on:
   workflow_dispatch:
     inputs:
       mega_url:
-        description: MEGA folder link (root link works best)
+        description: MEGA root folder link
+        required: true
+      remote_path:
+        description: "Folder inside the MEGA folder, e.g. quick tips/quick tips S1"
         required: true
       label:
         description: Output folder name, e.g. S1
@@ -28,6 +31,7 @@ jobs:
     timeout-minutes: 350
     env:
       MEGA_URL: ${{ inputs.mega_url }}
+      REMOTE: ${{ inputs.remote_path }}
       LABEL: ${{ inputs.label }}
       MODEL: ${{ inputs.whisper_model }}
       CALLBACK: ${{ inputs.callback_url }}
@@ -40,24 +44,23 @@ jobs:
       - name: Install tools
         run: |
           sudo apt-get update
-          sudo apt-get install -y ffmpeg megatools
+          sudo apt-get install -y ffmpeg
           pip install faster-whisper
           wget -q https://mega.nz/linux/repo/xUbuntu_24.04/amd64/megacmd-xUbuntu_24.04_amd64.deb
-          sudo apt-get install -y ./megacmd-xUbuntu_24.04_amd64.deb || true
-      - name: List folder (megatools and MEGAcmd)
+          sudo apt-get install -y ./megacmd-xUbuntu_24.04_amd64.deb
+      - name: Open MEGA folder and list
         run: |
           mkdir -p status
-          megatools --version | head -1 > status/tree-$LABEL-megatools.txt || true
-          megatools ls -R "$MEGA_URL" >> status/tree-$LABEL-megatools.txt 2>&1 || true
-          mega-login "$MEGA_URL" > status/tree-$LABEL-megacmd.txt 2>&1 || true
-          mega-ls -lR >> status/tree-$LABEL-megacmd.txt 2>&1 || true
-          wc -l status/tree-$LABEL-*.txt
+          mega-login "$MEGA_URL" > status/tree-$LABEL.txt 2>&1 || true
+          mega-ls -lR >> status/tree-$LABEL.txt 2>&1 || true
+          wc -l status/tree-$LABEL.txt
       - name: Download from MEGA
         if: env.LIST_ONLY != 'true'
         run: |
           mkdir raw
-          megatools dl --path raw "$MEGA_URL"
-          du -sh raw || true
+          mega-get "$REMOTE" raw/ || mega-get "/fx falcon/$REMOTE" raw/ || mega-get "/falcon/$REMOTE" raw/
+          du -sh raw
+          find raw -type f | head -20
       - name: Transcribe, screenshot, pair
         if: env.LIST_ONLY != 'true'
         run: python study/process.py raw "out/$LABEL" "$MODEL"
