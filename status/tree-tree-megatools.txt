@@ -1,0 +1,2 @@
+Usage:
+ERROR: You must specify your mega.nz username (email)
