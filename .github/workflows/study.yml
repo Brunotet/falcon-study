@@ -1,0 +1,61 @@
+name: Study videos
+
+on:
+  workflow_dispatch:
+    inputs:
+      mega_url:
+        description: MEGA folder or file link (one subfolder per run)
+        required: true
+      label:
+        description: Output folder name, e.g. S1
+        required: true
+      whisper_model:
+        description: tiny, base or small
+        default: small
+      callback_url:
+        description: Optional n8n URL to receive a JSON summary
+        required: false
+
+permissions:
+  contents: write
+
+jobs:
+  study:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    env:
+      MEGA_URL: ${{ inputs.mega_url }}
+      LABEL: ${{ inputs.label }}
+      MODEL: ${{ inputs.whisper_model }}
+      CALLBACK: ${{ inputs.callback_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg megatools
+          pip install faster-whisper
+      - name: Download from MEGA
+        run: |
+          mkdir raw
+          megatools dl --path raw "$MEGA_URL"
+          du -sh raw || true
+      - name: Transcribe, screenshot, pair
+        run: python study/process.py raw "out/$LABEL" "$MODEL"
+      - name: Commit results
+        if: always()
+        run: |
+          mkdir -p out status
+          git config user.name "falcon-bot"
+          git config user.email "falcon-bot@users.noreply.github.com"
+          git add out status
+          git diff --cached --quiet || git commit -m "study: $LABEL"
+          git pull --rebase origin main || true
+          git push
+      - name: Callback
+        if: always() && env.CALLBACK != ''
+        run: |
+          curl -sS -X POST -H "Content-Type: application/json" --data @status/$LABEL.json "$CALLBACK" || true
