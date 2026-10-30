@@ -3,15 +3,15 @@ name: Study videos
 on:
   workflow_dispatch:
     inputs:
-      mega_url:
-        description: MEGA root folder link
-        required: true
       remote_path:
         description: "Folder inside the MEGA folder, e.g. quick tips/quick tips S1"
         required: true
       label:
         description: Output folder name, e.g. S1
         required: true
+      part:
+        description: "Which slice of the folder, e.g. 1/2 or 2/2"
+        default: "1/1"
       list_only:
         description: "true = only list the folder tree, download nothing"
         default: "false"
@@ -30,7 +30,8 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 350
     env:
-      MEGA_URL: ${{ inputs.mega_url }}
+      MEGA_URL: ${{ secrets.MEGA_URL }}
+      PART: ${{ inputs.part }}
       REMOTE: ${{ inputs.remote_path }}
       LABEL: ${{ inputs.label }}
       MODEL: ${{ inputs.whisper_model }}
@@ -51,8 +52,8 @@ jobs:
       - name: Open MEGA folder and list
         run: |
           mkdir -p status
-          mega-login "$MEGA_URL" > status/tree-$LABEL.txt 2>&1 || true
-          mega-ls -lR >> status/tree-$LABEL.txt 2>&1 || true
+          mega-login "$MEGA_URL" > /dev/null 2>&1 || true
+          mega-ls -lR > status/tree-$LABEL.txt 2>&1 || true
           wc -l status/tree-$LABEL.txt
       - name: Download from MEGA
         if: env.LIST_ONLY != 'true'
