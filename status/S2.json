@@ -1,0 +1,58 @@
+{
+ "label": "S2",
+ "model": "small",
+ "videos": [
+  {
+   "name": "Quick Tips - S2E1 - Falcon Entry Types",
+   "minutes": 31.3,
+   "segments": 414,
+   "frames": 40,
+   "seconds_taken": 322
+  },
+  {
+   "name": "Quick Tips - S2E2 - The 1H Retrace Candle",
+   "minutes": 17.7,
+   "segments": 227,
+   "frames": 24,
+   "seconds_taken": 183
+  },
+  {
+   "name": "Quick Tips - S2E3 - The Arc",
+   "minutes": 14.1,
+   "segments": 188,
+   "frames": 4,
+   "seconds_taken": 123
+  },
+  {
+   "name": "Quick Tips - S2E4 - Pattern Separation",
+   "minutes": 14.6,
+   "segments": 188,
+   "frames": 19,
+   "seconds_taken": 143
+  },
+  {
+   "name": "Quick Tips - S2E5 - News vs. Structure",
+   "minutes": 8.3,
+   "segments": 94,
+   "frames": 11,
+   "seconds_taken": 79
+  },
+  {
+   "name": "Quick Tips - S2E6 - Forecasting",
+   "minutes": 11.2,
+   "segments": 143,
+   "frames": 15,
+   "seconds_taken": 112
+  },
+  {
+   "name": "Quick Tips - S2E7 - Mass Psychology",
+   "minutes": 12.1,
+   "segments": 143,
+   "frames": 16,
+   "seconds_taken": 119
+  }
+ ],
+ "errors": [],
+ "found": 7,
+ "part": "1/1"
+}
