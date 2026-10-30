@@ -1,6 +1,6 @@
-# Falcon strategy: rulebook (DRAFT v4)
+# Falcon strategy: rulebook (DRAFT v5)
 
-Sources read so far: Quick Tips S1E4, S2E1, S2E2, S2E3, S3E4 (valid trades), S3E5 (high probability), S3E7 (management), S2E4 (pattern separation), S2E5 (news), foundation ep. 5 (risk). Not yet read: other S1, S2E6/E7, S3E1/E3/E6, S2 "long term holds", foundation series. Everything is what the instructor said. **[OPEN]** = not precise enough to code yet.
+Sources read so far: Quick Tips S1E4, S2E1, S2E2, S2E3, S3E4 (valid trades), S3E5 (high probability), S3E7 (management), S2E4 (pattern separation), S2E5 (news), foundation ep. 5 (risk), foundation ep. 8 (placing a trade). Not yet read: other S1, S2E6/E7, S3E1/E3/E6, S2 "long term holds", foundation series. Everything is what the instructor said. **[OPEN]** = not precise enough to code yet.
 
 ## 1. Core idea
 Trendline and pattern trading on price structure. Structure first; candle shapes are a secondary "override". The edge is mass psychology: price breaks a previous high, traps people on the wrong side, then drops back into the pattern (mirror for lows). Think in probabilities, not right/wrong. Never rank trades A/B/C; use only **high probability** vs **valid**.
@@ -57,14 +57,26 @@ Trendline and pattern trading on price structure. Structure first; candle shapes
 - Do not discard the setup when price slightly exceeds the double top; it often evolves into a deeper ascending channel.
 - Entry on the clear trendline break after the arc, ideally with a retrace candle.
 
+## 8b. Order placement (foundation ep. 8)
+- Use an **entry (stop) order** placed just beyond the trigger level (e.g. a few pips below the trendline/double-top break for a sell). Let price trigger you in. Market orders are generally avoided (too emotional); limit orders are not used.
+- **No expiry** on the order; cancel it yourself when the setup is no longer valid.
+- Order of work: forecast first, checklist (risk sized, target, higher-timeframe alignment), then place the order. Placing is the small part; analysis and planning are the important part.
+- Take profit is usually **not** set; exits are managed with the stop (optional TP only if you cannot watch the screen).
+- Position size: 1% of balance divided by (stop pips x pip value), via a position-size calculator.
+- Manage from the chart/structure, not from the money going up and down.
+- If tagged out at the top of a double top (e.g. managing actively with a tighter stop), **re-enter** with a new entry order above and size it again.
+- Scale in on a continuation flag (even on the 15m) as the trade develops.
+- Holding over the weekend is fine; "do not trade Mondays/Fridays" is called a myth.
+
 ## 9. Stops, risk, targets
-- Stop above the top of the pattern or correction: typically **25-35 pips**. Rarely above 50-60 (pound pairs may need more). Skip setups that need 60-80 pips; wait for a tighter entry.
+- Stop above the top of the pattern or correction: typically **25-35 pips**; tight setups 15-25. **Minimum 15 pips** (more if you cannot watch the trade, around 20). Rarely above 50-60 (pound pairs may need more). Skip setups that need 60-80 pips; wait for a tighter entry.
 - Do not tighten the stop only to improve reward-to-risk.
 - **Risk is capped at 1% of the account per position** (foundation ep. 5). Never risk more because a trade "feels good".
+- **Beginners: move the first trade to break even before opening a second.**
 - **Exposure threshold:** maximum about **2% total open risk** at one time (some members allow up to 3%). In practice: two 1% trades open where neither has reached break even. Correlated trades (e.g. two dollar pairs) count together. Do not stack five or seven 1% trades.
 - Rule-based: if the open-risk limit is used up by average trades, you cannot take the next high-probability one. Stay out of low-quality valid trades.
 - Reward is uncapped; he cites a **minimum around 3:1** when thinking about the math (S3E4 used 2:1 as an average).
-- Targets are the previous low or pattern/trendline intersection on the higher timeframe. **[OPEN]** exact target rule.
+- Average reward-to-risk of about **3:1** is cited (an example trade showed a ~7:1 first solid target). Targets are the previous low or pattern/trendline intersection on the higher timeframe. **[OPEN]** exact target rule.
 
 ## 10. Management (S3E7): two simple processes
 **A. Reduced-risk flag in the middle of a structure (not at the top/bottom):**
@@ -77,6 +89,8 @@ Trendline and pattern trading on price structure. Structure first; candle shapes
 - Use the **candle close**, not intrabar price, for the decision (do not move the stop on a wick).
 - When price starts retracing after a significant break (retrace candles), locking a little profit and moving to break even is justified.
 
+**Locking profit example (foundation ep. 8):** after breaking the last low of the structure, move the stop to just above that low (the line in the sand), locking about 1.8R while price was running 2.3%. Break even at about 1% after price rejected/broke the structure low.
+
 **General:**
 - Locking profit: wait for a solid impulsive close, not a hover.
 - Break even is mainly a psychology and scaling tool: the worst case is a 1% loss; a missed trade is replaced by a re-entry.
@@ -87,4 +101,5 @@ Trendline and pattern trading on price structure. Structure first; candle shapes
 ## 11. Open questions
 - Precise Falcon flag definition in candle terms ("six to eight hours" of correction mentioned).
 - The exact percentage used for break even varies (about 1-1.3% in flags); no hard number given.
-- Order placement mechanics (foundation ep. 8), specific session rules, which pairs he trades.
+- Specific session rules and which pairs he trades.
+- Falcon flag definition in code terms and the 15m "scale-in" flag details.
