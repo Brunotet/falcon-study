@@ -1,0 +1,58 @@
+{
+ "label": "F1",
+ "model": "small",
+ "videos": [
+  {
+   "name": "EPISODE 1-FOUNDATION SERIES",
+   "minutes": 44.5,
+   "segments": 506,
+   "frames": 40,
+   "seconds_taken": 334
+  },
+  {
+   "name": "Episode 10 The Falcon Principles",
+   "minutes": 24.8,
+   "segments": 645,
+   "frames": 30,
+   "seconds_taken": 199
+  },
+  {
+   "name": "Episode 2 Technical Analysis",
+   "minutes": 68.6,
+   "segments": 2117,
+   "frames": 40,
+   "seconds_taken": 524
+  },
+  {
+   "name": "Episode 3 Pt 2 Strategy Principles",
+   "minutes": 70.0,
+   "segments": 1875,
+   "frames": 31,
+   "seconds_taken": 500
+  },
+  {
+   "name": "Episode 3 Pt 3 Strategy Principles",
+   "minutes": 66.2,
+   "segments": 859,
+   "frames": 33,
+   "seconds_taken": 434
+  },
+  {
+   "name": "Episode 3 Pt1 Strategy Principles",
+   "minutes": 98.2,
+   "segments": 2711,
+   "frames": 32,
+   "seconds_taken": 709
+  },
+  {
+   "name": "Episode 4 Probability",
+   "minutes": 26.6,
+   "segments": 399,
+   "frames": 34,
+   "seconds_taken": 200
+  }
+ ],
+ "errors": [],
+ "found": 7,
+ "part": "1/2"
+}
