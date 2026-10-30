@@ -1,0 +1,51 @@
+{
+ "label": "F2",
+ "model": "small",
+ "videos": [
+  {
+   "name": "Episode 5 Risk",
+   "minutes": 21.3,
+   "segments": 267,
+   "frames": 23,
+   "seconds_taken": 280
+  },
+  {
+   "name": "Episode 6 Choosing A Broker",
+   "minutes": 17.8,
+   "segments": 450,
+   "frames": 31,
+   "seconds_taken": 232
+  },
+  {
+   "name": "Episode 7 Journaling & Trade Refinement",
+   "minutes": 36.6,
+   "segments": 810,
+   "frames": 40,
+   "seconds_taken": 400
+  },
+  {
+   "name": "Episode 8 Placing A Trade",
+   "minutes": 42.1,
+   "segments": 1176,
+   "frames": 40,
+   "seconds_taken": 550
+  },
+  {
+   "name": "Episode 9 Psychology",
+   "minutes": 48.0,
+   "segments": 1349,
+   "frames": 37,
+   "seconds_taken": 643
+  },
+  {
+   "name": "Foundation Series - Website Trailer",
+   "minutes": 1.3,
+   "segments": 19,
+   "frames": 13,
+   "seconds_taken": 19
+  }
+ ],
+ "errors": [],
+ "found": 6,
+ "part": "2/2"
+}

@@ -1,0 +1,66 @@
+FLAGS VERS      SIZE            DATE       NAME
+/fx falcon:
+d---    -            - 04Aug2020 03:13:41 foundation series
+d---    -            - 04Aug2020 03:13:41 quick tips
+d---    -            - 04Aug2020 03:13:41 Weekly Content
+
+/fx falcon/foundation series:
+----    1       348922 07Jun2020 16:11:40 90 Day Plan Q2.docx
+----    1    750083036 07Jun2020 16:32:32 EPISODE 1-FOUNDATION SERIES.mp4
+----    1    796380876 07Jun2020 16:31:24 Episode 2 Technical Analysis.mp4
+----    1    568718751 07Jun2020 16:26:34 Episode 3 Pt 2 Strategy Principles.mp4
+----    1    530196276 07Jun2020 16:29:06 Episode 3 Pt 3 Strategy Principles.mp4
+----    1    756677634 07Jun2020 16:26:14 Episode 3 Pt1 Strategy Principles.mp4
+----    1    543404753 07Jun2020 16:22:48 Episode 4 Probability.mp4
+----    1    409722865 07Jun2020 16:21:34 Episode 5 Risk.mp4
+----    1    194632828 07Jun2020 16:18:40 Episode 6 Choosing A Broker.mp4
+----    1    336537436 07Jun2020 16:18:56 Episode 7 Journaling & Trade Refinement.mp4
+----    1    359598282 07Jun2020 16:17:26 Episode 8 Placing A Trade.mp4
+----    1    660116406 07Jun2020 16:16:40 Episode 9 Psychology.mp4
+----    1    462622681 07Jun2020 16:14:44 Episode 10 The Falcon Principles.mp4
+----    1     32553723 07Jun2020 16:12:04 Foundation Series - Website Trailer.mp4
+
+/fx falcon/quick tips:
+d---    -            - 04Aug2020 03:13:41 quick tips S1
+d---    -            - 04Aug2020 03:13:41 quick tips S2
+d---    -            - 04Aug2020 03:13:41 quick tips S3
+
+/fx falcon/quick tips/quick tips S1:
+----    1     63693905 07Jun2020 17:22:48 Quick Tips - S1E1 - Nature.mp4
+----    1    108414521 07Jun2020 17:22:48 Quick Tips - S1E2 - Patterns within Patterns.mp4
+----    1     73147653 07Jun2020 17:22:32 Quick Tips - S1E3 - Multi Touch Confirmation.mp4
+----    1    111033830 07Jun2020 17:22:14 Quick Tips - S1E4 - Candlesticks & The Override.mp4
+----    1    132332180 07Jun2020 17:22:16 Quick Tips - S1E5 - Phase Identification.mp4
+----    1    157484061 07Jun2020 17:21:42 Quick Tips - S1E6 - Forecasting.mp4
+----    1    145039169 07Jun2020 17:21:38 Quick Tips - S1E7 - Watchlists and the 3 Step Process.mp4
+
+/fx falcon/quick tips/quick tips S2:
+----    1    218019823 07Jun2020 17:31:58 Quick Tips - S2E1 - Falcon Entry Types.mp4
+----    1    132950026 07Jun2020 17:31:36 Quick Tips - S2E2 - The 1H Retrace Candle.mp4
+----    1    109248227 07Jun2020 17:31:02 Quick Tips - S2E3 - The Arc.mp4
+----    1    117992724 07Jun2020 17:30:56 Quick Tips - S2E4 - Pattern Separation.mp4
+----    1     67526095 07Jun2020 17:30:26 Quick Tips - S2E5 - News vs. Structure.mp4
+----    1     81630085 07Jun2020 17:30:18 Quick Tips - S2E6 - Forecasting.mp4
+----    1    103503392 07Jun2020 17:30:32 Quick Tips - S2E7 - Mass Psychology.mp4
+
+/fx falcon/quick tips/quick tips S3:
+----    1    235525621 07Jun2020 17:38:28 Falcon Quick Tips - Season Three - Episode Five - High Probability Setups.mp4
+----    1    268141216 07Jun2020 17:38:48 Falcon Quick Tips - Season Three - Episode Four - Valid Trades.mp4
+----    1    205268713 07Jun2020 17:39:26 Falcon Quick Tips - Season Three - Episode Seven - Management & Discretion.mp4
+----    1    147881855 07Jun2020 17:40:14 Falcon Quick Tips - Season Three - Episode Six - Running Channels & Middle Section.mp4
+----    1    229564086 07Jun2020 17:41:18 Quick Tips - Season Three - Episode One - Lower Timeframes 2.mp4
+----    1    222716019 07Jun2020 17:40:06 Quick Tips - Season Three - Episode Three - Go To Setups.mp4
+----    1    196603653 07Jun2020 17:41:08 Quick Tips - Season Two - Episode Two - Long Term Holds.mp4
+
+/fx falcon/Weekly Content:
+----    1    343510809 07Jun2020 17:08:22 Biweekly Trade Recap - August '19 Part 1.mp4
+----    1    119151692 07Jun2020 17:05:06 Biweekly Trade Recap - End Of The Year '19.mp4
+----    1    310788898 07Jun2020 17:10:44 Biweekly Trade Recap - January '19 Part 1.mp4
+----    1    295971571 07Jun2020 17:08:46 Biweekly Trade Recap - January '19 Part 2.mp4
+----    1    274715955 07Jun2020 17:06:42 Biweekly Trade Recap - July '19 Part 1.mp4
+----    1    179237647 07Jun2020 17:03:38 Biweekly Trade Recap - July '19 Part 2.mp4
+----    1    133964922 07Jun2020 17:03:06 Biweekly Trade Recap - June '19 Part 1.mp4
+----    1     72274607 07Jun2020 17:02:56 Biweekly Trade Recap - June '19 Part 2.mp4
+----    1    205105522 07Jun2020 17:06:24 Biweekly Trade Recap - November '19 Part 1.mp4
+----    1    119555044 07Jun2020 17:04:54 Biweekly Trade Recap - November '19 Part 2.mp4
+----    1    184762835 07Jun2020 17:05:50 Biweekly Trade Recap - October '19 Part 1.mp4
