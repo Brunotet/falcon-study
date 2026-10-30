@@ -1,4 +1,4 @@
-import json, re, subprocess, sys, time, traceback
+import json, os, re, subprocess, sys, time, traceback
 from pathlib import Path
 
 from faster_whisper import WhisperModel
@@ -83,7 +83,12 @@ def main():
     status = {"label": label, "model": model_name, "videos": [], "errors": []}
     Path("status").mkdir(exist_ok=True)
     videos = sorted(p for p in raw.rglob("*") if p.suffix.lower() in VIDEO_EXT)
+    part = os.environ.get("PART", "1/1")
+    pi, pn = [int(x) for x in part.split("/")]
+    size = -(-len(videos) // pn)
+    videos = videos[(pi - 1) * size : pi * size]
     status["found"] = len(videos)
+    status["part"] = part
     model = WhisperModel(model_name, device="cpu", compute_type="int8")
     for v in videos:
         t0 = time.time()
