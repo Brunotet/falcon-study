@@ -1,6 +1,6 @@
-# Falcon strategy: rulebook (DRAFT v3)
+# Falcon strategy: rulebook (DRAFT v4)
 
-Sources read so far: Quick Tips S1E4, S2E1, S2E2, S2E3, S3E4 (valid trades), S3E5 (high probability), S3E7 (management). Not yet read: other S1, S2E4-E7, S3E1/E3/E6, S2 "long term holds", foundation series. Everything is what the instructor said. **[OPEN]** = not precise enough to code yet.
+Sources read so far: Quick Tips S1E4, S2E1, S2E2, S2E3, S3E4 (valid trades), S3E5 (high probability), S3E7 (management), S2E4 (pattern separation), S2E5 (news), foundation ep. 5 (risk). Not yet read: other S1, S2E6/E7, S3E1/E3/E6, S2 "long term holds", foundation series. Everything is what the instructor said. **[OPEN]** = not precise enough to code yet.
 
 ## 1. Core idea
 Trendline and pattern trading on price structure. Structure first; candle shapes are a secondary "override". The edge is mass psychology: price breaks a previous high, traps people on the wrong side, then drops back into the pattern (mirror for lows). Think in probabilities, not right/wrong. Never rank trades A/B/C; use only **high probability** vs **valid**.
@@ -15,6 +15,17 @@ Trendline and pattern trading on price structure. Structure first; candle shapes
 - Look left: mark previous highs/lows. Best sells are at the top of a pattern, ideally **after the previous high is broken**.
 - Patterns that are preferred: ascending/descending channels, double top/bottom within a pattern, impulse-correction-continuation, an "M"-type pattern into a double top.
 - Weak: a big descending/sideways structure that can "trickle" for ages, or a continuation with a big scoop/gap. These play out 1-2 in 10 by his account.
+
+### 3b. Pattern separation (S2E4)
+- Draw the trendline through the **two most recent significant touches** of the current pattern.
+- When price breaks a line, do not keep dragging the line outward to "evolve" it. Ask **how** it broke: a break in the form of a corrective/descending channel with no progression means the old line is still the structure; rein the line back to the latest two touches and see if a **new pattern** (new structure) forms. Keep old structure and new structure separate.
+- A break of a trendline alone means nothing; how it breaks and what comes next does. Do not "marry" a trendline.
+- A third touch on the separated line is the setup point.
+
+### 3c. News (S2E5, foundation ep. 5)
+- Structure over news. News creates volatility, not direction. Do not be paralysed by scheduled news.
+- Beginners: avoid trading through major news. Elections: avoid. Slippage can exceed the 1% risk; accept it as a rare cost.
+- **90% rule:** after an impulsive break of a structure, there is about a 90% chance price reaches the **start of the correction** (the origin of the move), unless it makes a deeper correction first.
 
 ## 4. Phase
 - **Impulsive phase** (high already broken, first impulse back confirmed): setups here are higher probability.
@@ -49,8 +60,11 @@ Trendline and pattern trading on price structure. Structure first; candle shapes
 ## 9. Stops, risk, targets
 - Stop above the top of the pattern or correction: typically **25-35 pips**. Rarely above 50-60 (pound pairs may need more). Skip setups that need 60-80 pips; wait for a tighter entry.
 - Do not tighten the stop only to improve reward-to-risk.
-- **Risk is capped at about 1% per trade** (S3E4). **[OPEN]** exact sizing rule (foundation ep. 5).
-- Average reward around 2:1 is used as an example; targets are the previous low or pattern/trendline intersection on the higher timeframe. **[OPEN]** exact target rule.
+- **Risk is capped at 1% of the account per position** (foundation ep. 5). Never risk more because a trade "feels good".
+- **Exposure threshold:** maximum about **2% total open risk** at one time (some members allow up to 3%). In practice: two 1% trades open where neither has reached break even. Correlated trades (e.g. two dollar pairs) count together. Do not stack five or seven 1% trades.
+- Rule-based: if the open-risk limit is used up by average trades, you cannot take the next high-probability one. Stay out of low-quality valid trades.
+- Reward is uncapped; he cites a **minimum around 3:1** when thinking about the math (S3E4 used 2:1 as an average).
+- Targets are the previous low or pattern/trendline intersection on the higher timeframe. **[OPEN]** exact target rule.
 
 ## 10. Management (S3E7): two simple processes
 **A. Reduced-risk flag in the middle of a structure (not at the top/bottom):**
@@ -72,6 +86,5 @@ Trendline and pattern trading on price structure. Structure first; candle shapes
 
 ## 11. Open questions
 - Precise Falcon flag definition in candle terms ("six to eight hours" of correction mentioned).
-- What the "90% rule" means exactly (mentioned in S3E5 and S3E7 for room to move from the top of a structure).
 - The exact percentage used for break even varies (about 1-1.3% in flags); no hard number given.
-- Pair/session/news rules (S2E5), position sizing (foundation ep. 5), order placement (foundation ep. 8).
+- Order placement mechanics (foundation ep. 8), specific session rules, which pairs he trades.
