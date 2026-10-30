@@ -1,6 +1,6 @@
-# Falcon strategy: rulebook (DRAFT v2)
+# Falcon strategy: rulebook (DRAFT v3)
 
-Sources read so far: Quick Tips S1E4, S2E1, S2E2, S2E3, S3E4 (valid trades), S3E5 (high probability). Not yet read: other S1, S2E4-E7, S3E1/E3/E6/E7, S2 "long term holds", foundation series. Everything is what the instructor said. **[OPEN]** = not precise enough to code yet.
+Sources read so far: Quick Tips S1E4, S2E1, S2E2, S2E3, S3E4 (valid trades), S3E5 (high probability), S3E7 (management). Not yet read: other S1, S2E4-E7, S3E1/E3/E6, S2 "long term holds", foundation series. Everything is what the instructor said. **[OPEN]** = not precise enough to code yet.
 
 ## 1. Core idea
 Trendline and pattern trading on price structure. Structure first; candle shapes are a secondary "override". The edge is mass psychology: price breaks a previous high, traps people on the wrong side, then drops back into the pattern (mirror for lows). Think in probabilities, not right/wrong. Never rank trades A/B/C; use only **high probability** vs **valid**.
@@ -52,12 +52,26 @@ Trendline and pattern trading on price structure. Structure first; candle shapes
 - **Risk is capped at about 1% per trade** (S3E4). **[OPEN]** exact sizing rule (foundation ep. 5).
 - Average reward around 2:1 is used as an example; targets are the previous low or pattern/trendline intersection on the higher timeframe. **[OPEN]** exact target rule.
 
-## 10. Management
-- 1H retrace candle as the lock-in signal: move the stop to just below the retrace and let the market decide.
-- Do not move to break even too quickly at the top of a structure; let price close beyond the structure and commit first. After a tight impulse flag with an impulse and retrace, break even is fine.
+## 10. Management (S3E7): two simple processes
+**A. Reduced-risk flag in the middle of a structure (not at the top/bottom):**
+- After the impulse away from entry **closes solidly** (no real wick), move the stop to **break even at roughly 1-1.3%** profit. Not an exact trigger; use structure.
+- Reason: the move can develop into a larger flag. Look for a **re-entry**; there are usually 1-3 chances to enter.
+
+**B. High-probability trade at the top or bottom of a structure:**
+- Be lenient. **Do not move to break even quickly, even at ~1% or more.** Price can hover/trickle, take you out at break even, then drop.
+- Wait for a **significant, impulsive close/break of the structure** before locking profit or moving to break even.
+- Use the **candle close**, not intrabar price, for the decision (do not move the stop on a wick).
+- When price starts retracing after a significant break (retrace candles), locking a little profit and moving to break even is justified.
+
+**General:**
+- Locking profit: wait for a solid impulsive close, not a hover.
+- Break even is mainly a psychology and scaling tool: the worst case is a 1% loss; a missed trade is replaced by a re-entry.
+- Manage consistently; expect a small error or two each month. Back-test your own management on 10 trades.
+- Longer-term holds use a more relaxed approach (S3 long-term holds, not read yet).
 - A 1% loss on a high-probability setup is not a mistake, just probability playing out.
 
 ## 11. Open questions
 - Precise Falcon flag definition in candle terms ("six to eight hours" of correction mentioned).
-- What the "90% rule" means exactly (mentioned for continuation to the downside).
-- Pair/session/news rules (S2E5), management details (S3E7), position sizing (foundation ep. 5), order placement (foundation ep. 8).
+- What the "90% rule" means exactly (mentioned in S3E5 and S3E7 for room to move from the top of a structure).
+- The exact percentage used for break even varies (about 1-1.3% in flags); no hard number given.
+- Pair/session/news rules (S2E5), position sizing (foundation ep. 5), order placement (foundation ep. 8).
