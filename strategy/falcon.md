@@ -1,6 +1,6 @@
-# Falcon strategy: rulebook (DRAFT v5)
+# Falcon strategy: rulebook (DRAFT v6)
 
-Sources read so far: Quick Tips S1E4, S2E1, S2E2, S2E3, S3E4 (valid trades), S3E5 (high probability), S3E7 (management), S2E4 (pattern separation), S2E5 (news), foundation ep. 5 (risk), foundation ep. 8 (placing a trade). Not yet read: other S1, S2E6/E7, S3E1/E3/E6, S2 "long term holds", foundation series. Everything is what the instructor said. **[OPEN]** = not precise enough to code yet.
+Sources read so far: Quick Tips S1E4, S2E1, S2E2, S2E3, S3E4 (valid trades), S3E5 (high probability), S3E7 (management), S2E4 (pattern separation), S2E5 (news), foundation ep. 5 (risk), foundation ep. 8 (placing a trade), foundation ep. 3 pt 1 (patterns, flags, evolving). Not yet read: foundation ep. 3 pt 2-3 (entry types, psychology), ep. 4 (probability), ep. 2; other S1, S2E6/E7, S3E1/E3/E6, S2 "long term holds", foundation series. Everything is what the instructor said. **[OPEN]** = not precise enough to code yet.
 
 ## 1. Core idea
 Trendline and pattern trading on price structure. Structure first; candle shapes are a secondary "override". The edge is mass psychology: price breaks a previous high, traps people on the wrong side, then drops back into the pattern (mirror for lows). Think in probabilities, not right/wrong. Never rank trades A/B/C; use only **high probability** vs **valid**.
@@ -57,6 +57,28 @@ Trendline and pattern trading on price structure. Structure first; candle shapes
 - Do not discard the setup when price slightly exceeds the double top; it often evolves into a deeper ascending channel.
 - Entry on the clear trendline break after the arc, ideally with a retrace candle.
 
+## 8a. Flags and patterns (foundation ep. 3 pt 1)
+**Market nature:** price is either impulsive (higher momentum than usual) or corrective (noticeably smaller candles, no progression). A break of a trendline that is corrective means no progression, so the old direction is still expected; an impulsive break signals change. Draw trendlines on the **wicks**; ignore one-off volatility spikes/flash crashes.
+
+**Structure:** work top-down: weekly > daily > 4H > 1H, and 15m only to refine (not for beginners, give it a couple of months). Find the **outer structure** first, then the **inner structure** (the most recent relevant price). Do not use trendlines from years ago.
+
+**Flags (mainly bear flags / sells; bull flags are the mirror, used less):**
+- **Tight (first) flag, highest probability:** after the first impulse, a flat correction lasting **a minimum of 6-8 one-hour candles** (can be 12-14). Entry order a couple of pips beyond the flag extreme; stop beyond the flag high/low (e.g. 30 pips to be conservative, 20 for tight bull flag examples; tighter with experience). Common at the top/bottom of structures.
+- **Steep flag, avoid:** deep/steep corrections tag you in and out and cause 1% losses even when the direction is right. Exception: a steep flag with something to retest (e.g. a head and shoulders neckline). If taken, move to break even at the low.
+- **Larger flag:** a bigger version of the first flag, after the tight flag. Wait for a second bottom/top inside it (a double top/bottom) before entering on the rejection; stop about 30 pips.
+- **Running channel:** after an impulse, the correction forms a channel that slopes slightly the wrong way and ends with a small ascending (for sells) or descending (for buys) structure; enter at the end of that last structure. Stops around 35-40 pips in the examples.
+- **Falcon flag:** starts like a normal flag. You only know it is a Falcon flag after price retraces to your entry and you take break even. Then price forms a larger version (a double bottom/top inside the pattern) and plays out. Used mainly to the downside. This is why the break-even method exists.
+
+**Patterns:**
+- Ascending/descending channel = three sections (1 impulse, 2 flag/correction, 3 impulse). A **pattern within a pattern** (e.g. ascending within ascending) raises probability.
+- Multiple entry types per setup: (1) at the third touch/area, (2) on the break of the pattern, (3) on the break of the flag, (4) head-and-shoulders neckline on the 1H. Do not wait only for one perfect entry or a break-and-retest (often never comes).
+- **Double top/bottom:** extension is allowed; price may go slightly beyond (still counts). Mini double tops can sit inside a pattern.
+- **Expanding formation:** higher highs and lower lows; mostly traded to the downside.
+- **Head and shoulders:** used on the 1H to complement an existing view; do not chase large higher-timeframe ones.
+- **90% rule:** about 90% chance price reaches the start of the correction after an impulsive break.
+
+**Evolving (pattern separation):** use the two most recent significant touches. Do not keep re-drawing the line; **wait for confirmation** (a clear break out of the structure) before evolving it. Ask each time whether the break was corrective or impulsive.
+
 ## 8b. Order placement (foundation ep. 8)
 - Use an **entry (stop) order** placed just beyond the trigger level (e.g. a few pips below the trendline/double-top break for a sell). Let price trigger you in. Market orders are generally avoided (too emotional); limit orders are not used.
 - **No expiry** on the order; cancel it yourself when the setup is no longer valid.
@@ -99,7 +121,6 @@ Trendline and pattern trading on price structure. Structure first; candle shapes
 - A 1% loss on a high-probability setup is not a mistake, just probability playing out.
 
 ## 11. Open questions
-- Precise Falcon flag definition in candle terms ("six to eight hours" of correction mentioned).
 - The exact percentage used for break even varies (about 1-1.3% in flags); no hard number given.
 - Specific session rules and which pairs he trades.
-- Falcon flag definition in code terms and the 15m "scale-in" flag details.
+- Exact candle-level rules for a "flat" tight flag (how flat is flat) and for the running-channel end structure; entry-type rules for the 15m (foundation ep. 3 pt 2-3).
