@@ -1,0 +1,58 @@
+{
+ "label": "S3",
+ "model": "small",
+ "videos": [
+  {
+   "name": "Falcon Quick Tips - Season Three - Episode Five - High Probability Setups",
+   "minutes": 29.2,
+   "segments": 362,
+   "frames": 39,
+   "seconds_taken": 580
+  },
+  {
+   "name": "Falcon Quick Tips - Season Three - Episode Four - Valid Trades",
+   "minutes": 33.2,
+   "segments": 531,
+   "frames": 40,
+   "seconds_taken": 675
+  },
+  {
+   "name": "Falcon Quick Tips - Season Three - Episode Seven - Management & Discretion",
+   "minutes": 28.6,
+   "segments": 349,
+   "frames": 38,
+   "seconds_taken": 570
+  },
+  {
+   "name": "Falcon Quick Tips - Season Three - Episode Six - Running Channels & Middle Section",
+   "minutes": 17.7,
+   "segments": 392,
+   "frames": 24,
+   "seconds_taken": 359
+  },
+  {
+   "name": "Quick Tips - Season Three - Episode One - Lower Timeframes 2",
+   "minutes": 32.6,
+   "segments": 508,
+   "frames": 40,
+   "seconds_taken": 496
+  },
+  {
+   "name": "Quick Tips - Season Three - Episode Three - Go To Setups",
+   "minutes": 29.4,
+   "segments": 710,
+   "frames": 39,
+   "seconds_taken": 447
+  },
+  {
+   "name": "Quick Tips - Season Two - Episode Two - Long Term Holds",
+   "minutes": 28.3,
+   "segments": 604,
+   "frames": 38,
+   "seconds_taken": 429
+  }
+ ],
+ "errors": [],
+ "found": 7,
+ "part": "1/1"
+}
