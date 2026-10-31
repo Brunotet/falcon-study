@@ -5,7 +5,7 @@ import sys, json
 import numpy as np, pandas as pd
 from falcon_engine import P, prep, pipsize, find_setups, summarize, fetch
 
-P2 = dict(piv_n=3, look=150, min_gap=6, tol_mult=0.3, area_below=1.5, area_above=0.5, min_r=3.0, be_at_r=1.5,
+P2 = dict(piv_n=3, look=150, min_gap=6, tol_mult=0.3, area_frac=0.4, area_above=0.5, min_r=3.0, be_at_r=1.5,
           spread=1.0, order_life=24, hold_max=240, stop_off=3)
 
 G = {}
@@ -37,9 +37,10 @@ def htf_context(h4, t, flag_high, entry, risk, p=P2):
     if t2 - t1 < p["min_gap"]: gate('g2_pivots_too_close'); return None
     p1, p2 = hi[t1], hi[t2]
     if p2 < p1 - tol: gate('g3_lower_high'); return None                       # lower high: no top of structure
+    height = max(p2 - lw[t1:].min(), med)                 # structure height: top line to lowest low since the first high
     slope = max(0.0, (p2 - p1) / (t2 - t1))             # ascending or flat resistance line
     line_now = p2 + slope * (len(H) - t2)
-    if not (line_now - p["area_below"] * med <= flag_high <= line_now + p["area_above"] * med): gate('g4_not_in_top_area'); return None   # in the top area
+    if not (line_now - p["area_frac"] * height <= flag_high <= line_now + p["area_above"] * med): gate('g4_not_in_top_area'); return None   # in the top area
     need = entry - p["min_r"] * risk
     lows = [lw[i] for i in pl if lw[i] <= need]
     if not lows: gate('g5_no_structure_low_3R'); return None
