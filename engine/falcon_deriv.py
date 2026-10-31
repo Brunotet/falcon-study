@@ -9,9 +9,24 @@ import falcon_stage2 as f2
 
 SYMS = "R_10,R_25,R_50,R_75,R_100,1HZ10V,1HZ25V,1HZ50V,1HZ75V,1HZ100V,BOOM500,BOOM1000,CRASH500,CRASH1000,stpRNG,JD10,JD25,JD50,JD75,JD100,RDBULL,RDBEAR".split(",")
 
-def fetch_deriv(sym, days=730):
+HOSTS = ["wss://ws.derivws.com/websockets/v3?app_id=1089", "wss://ws.binaryws.com/websockets/v3?app_id=1089"]
+HDRS = ["User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120 Safari/537.36"]
+
+def connect():
     import websocket
-    ws = websocket.create_connection("wss://ws.derivws.com/websockets/v3?app_id=1089", timeout=30)
+    errs = []
+    for host in HOSTS:
+        for origin in ("https://app.deriv.com", "https://deriv.com", None):
+            try:
+                kw = dict(timeout=30, header=HDRS)
+                if origin: kw["origin"] = origin
+                return websocket.create_connection(host, **kw)
+            except Exception as e:
+                errs.append(f"{host.split('/')[2]} origin={origin}: {str(e)[:60]}")
+    raise RuntimeError(" | ".join(errs))
+
+def fetch_deriv(sym, days=730):
+    ws = connect()
     end = "latest"; rows = {}; floor = time.time() - days * 86400
     for _ in range(20):
         ws.send(json.dumps({"ticks_history": sym, "adjust_start_time": 1, "count": 5000, "end": end, "granularity": 3600, "style": "candles"}))
