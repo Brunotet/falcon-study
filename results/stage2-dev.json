@@ -1,0 +1,29 @@
+{
+ "mode": "dev",
+ "all": {
+  "trades": 2,
+  "win_rate": 0.0,
+  "avg_r": -1.028,
+  "total_r": -2.1,
+  "profit_factor": 0.0
+ },
+ "by_symbol": {
+  "EURUSD": {
+   "trades": 1,
+   "win_rate": 0.0,
+   "avg_r": -1.028,
+   "total_r": -1.0,
+   "profit_factor": 0.0
+  },
+  "GBPUSD": {
+   "trades": 1,
+   "win_rate": 0.0,
+   "avg_r": -1.028,
+   "total_r": -1.0,
+   "profit_factor": 0.0
+  }
+ },
+ "by_exit": {
+  "stop": 2
+ }
+}
