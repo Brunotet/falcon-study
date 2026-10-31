@@ -1,39 +1,40 @@
 {
  "mode": "dev",
  "all": {
-  "trades": 2,
-  "win_rate": 0.0,
-  "avg_r": -1.028,
-  "total_r": -2.1,
-  "profit_factor": 0.0
+  "trades": 4,
+  "win_rate": 25.0,
+  "avg_r": 0.066,
+  "total_r": 0.3,
+  "profit_factor": 1.08
  },
  "gates": {
   "setups_total": 775,
-  "g4_not_in_top_area": 357,
+  "g4_not_in_top_area": 353,
   "g2_pivots_too_close": 136,
   "g3_lower_high": 276,
-  "g6_passed": 4,
-  "g0_history": 1,
-  "g7_order_never_filled": 2,
-  "g5_no_structure_low_3R": 1
+  "g5_no_structure_low_3R": 4,
+  "g6_passed": 5,
+  "g7_order_never_filled": 1,
+  "g0_history": 1
  },
  "by_symbol": {
   "EURUSD": {
-   "trades": 1,
+   "trades": 2,
    "win_rate": 0.0,
-   "avg_r": -1.028,
-   "total_r": -1.0,
+   "avg_r": -1.046,
+   "total_r": -2.1,
    "profit_factor": 0.0
   },
   "GBPUSD": {
-   "trades": 1,
-   "win_rate": 0.0,
-   "avg_r": -1.028,
-   "total_r": -1.0,
-   "profit_factor": 0.0
+   "trades": 2,
+   "win_rate": 50.0,
+   "avg_r": 1.178,
+   "total_r": 2.4,
+   "profit_factor": 3.29
   }
  },
  "by_exit": {
-  "stop": 2
+  "stop": 3,
+  "target": 1
  }
 }
