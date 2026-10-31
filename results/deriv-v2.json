@@ -1,0 +1,11 @@
+{
+ "R_75": {
+  "error": "ws.derivws.com origin=https://app.deriv.com: Handshake status 520 <none> -+-+- {'date': 'Sat, 31 Oct 2026 | ws.derivws.com origin=https://deriv.com: Handshake status 520 <none> -+-+- {'date': 'Sat, 31"
+ },
+ "BOOM1000": {
+  "error": "ws.derivws.com origin=https://app.deriv.com: Handshake status 520 <none> -+-+- {'date': 'Sat, 31 Oct 2026 | ws.derivws.com origin=https://deriv.com: Handshake status 520 <none> -+-+- {'date': 'Sat, 31"
+ },
+ "stpRNG": {
+  "error": "ws.derivws.com origin=https://app.deriv.com: Handshake status 520 <none> -+-+- {'date': 'Sat, 31 Oct 2026 | ws.derivws.com origin=https://deriv.com: Handshake status 520 <none> -+-+- {'date': 'Sat, 31"
+ }
+}
