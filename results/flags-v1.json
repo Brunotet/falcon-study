@@ -1,0 +1,88 @@
+{
+ "all": {
+  "trades": 690,
+  "win_rate": 17.4,
+  "avg_r": -0.123,
+  "total_r": -84.7,
+  "profit_factor": 0.81
+ },
+ "high_prob": {
+  "trades": 70,
+  "win_rate": 17.1,
+  "avg_r": -0.046,
+  "total_r": -3.3,
+  "profit_factor": 0.92
+ },
+ "valid_only": {
+  "trades": 620,
+  "win_rate": 17.4,
+  "avg_r": -0.131,
+  "total_r": -81.5,
+  "profit_factor": 0.79
+ },
+ "by_symbol": {
+  "AUDUSD": {
+   "trades": 109,
+   "win_rate": 23.9,
+   "avg_r": 0.146,
+   "total_r": 16.0,
+   "profit_factor": 1.28
+  },
+  "EURUSD": {
+   "trades": 98,
+   "win_rate": 23.5,
+   "avg_r": 0.112,
+   "total_r": 11.0,
+   "profit_factor": 1.2
+  },
+  "GBPCAD": {
+   "trades": 79,
+   "win_rate": 15.2,
+   "avg_r": -0.178,
+   "total_r": -14.0,
+   "profit_factor": 0.72
+  },
+  "GBPJPY": {
+   "trades": 36,
+   "win_rate": 13.9,
+   "avg_r": -0.219,
+   "total_r": -7.9,
+   "profit_factor": 0.65
+  },
+  "GBPUSD": {
+   "trades": 132,
+   "win_rate": 19.7,
+   "avg_r": -0.028,
+   "total_r": -3.6,
+   "profit_factor": 0.95
+  },
+  "NZDCAD": {
+   "trades": 82,
+   "win_rate": 11.0,
+   "avg_r": -0.412,
+   "total_r": -33.7,
+   "profit_factor": 0.44
+  },
+  "USDCAD": {
+   "trades": 78,
+   "win_rate": 12.8,
+   "avg_r": -0.313,
+   "total_r": -24.4,
+   "profit_factor": 0.55
+  },
+  "USDJPY": {
+   "trades": 76,
+   "win_rate": 11.8,
+   "avg_r": -0.368,
+   "total_r": -28.0,
+   "profit_factor": 0.49
+  }
+ },
+ "by_exit": {
+  "stop": 396,
+  "be": 154,
+  "target": 117,
+  "stop_same_candle": 20,
+  "timeout": 3
+ }
+}
