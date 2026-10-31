@@ -8,6 +8,9 @@ from falcon_engine import P, prep, pipsize, find_setups, summarize, fetch
 P2 = dict(piv_n=3, look=150, min_gap=6, tol_mult=0.3, area_below=1.5, area_above=0.5, min_r=3.0, be_at_r=1.5,
           spread=1.0, order_life=24, hold_max=240, stop_off=3)
 
+G = {}
+def gate(k): G[k] = G.get(k, 0) + 1
+
 def to4h(df):
     return df.resample("4h").agg({"open": "first", "high": "max", "low": "min", "close": "last"}).dropna()
 
@@ -24,22 +27,23 @@ def htf_context(h4, t, flag_high, entry, risk, p=P2):
     """Using only 4H candles completed before t. Returns (at_top, target_price) or None."""
     m = h4.index.searchsorted(t - pd.Timedelta(hours=4), side="right")
     lo = max(0, m - p["look"]); H = h4.iloc[lo:m]
-    if len(H) < 40: return None
+    if len(H) < 40: gate('g0_history'); return None
     hi, lw = H["high"].values, H["low"].values
     med = np.median(hi - lw); tol = p["tol_mult"] * med
     ph = [i for i in pivots(hi, p["piv_n"], "high") if i + p["piv_n"] < len(H)]   # confirmed only
     pl = [i for i in pivots(lw, p["piv_n"], "low") if i + p["piv_n"] < len(H)]
-    if len(ph) < 2: return None
+    if len(ph) < 2: gate('g1_fewer_than_2_pivot_highs'); return None
     t1, t2 = ph[-2], ph[-1]
-    if t2 - t1 < p["min_gap"]: return None
+    if t2 - t1 < p["min_gap"]: gate('g2_pivots_too_close'); return None
     p1, p2 = hi[t1], hi[t2]
-    if p2 < p1 - tol: return None                       # lower high: no top of structure
+    if p2 < p1 - tol: gate('g3_lower_high'); return None                       # lower high: no top of structure
     slope = max(0.0, (p2 - p1) / (t2 - t1))             # ascending or flat resistance line
     line_now = p2 + slope * (len(H) - t2)
-    if not (line_now - p["area_below"] * med <= flag_high <= line_now + p["area_above"] * med): return None   # in the top area
+    if not (line_now - p["area_below"] * med <= flag_high <= line_now + p["area_above"] * med): gate('g4_not_in_top_area'); return None   # in the top area
     need = entry - p["min_r"] * risk
     lows = [lw[i] for i in pl if lw[i] <= need]
-    if not lows: return None
+    if not lows: gate('g5_no_structure_low_3R'); return None
+    gate('g6_passed')
     return True, max(lows)                               # nearest structure low that is >= 3R away
 
 def simulate2(s, target, o, h, l, c, pip, p=P2):
@@ -68,9 +72,11 @@ def run2(df, sym, start, p=P2):
         for s in find_setups(o, h, l, c, pip, P):
             t = d.index[s["t_idx"]]
             if t < start: continue
+            gate('setups_total')
             ctx = htf_context(h4, t, s["flag_high"], s["entry"], s["risk_pips"] * pip, p)
             if not ctx: continue
             r = simulate2(s, ctx[1], o, h, l, c, pip, p)
+            if not r: gate('g7_order_never_filled')
             if r: rows.append(dict(symbol=sym, side=side, time=d.index[r["i"]], r=r["r"], why=r["why"], risk_pips=s["risk_pips"]))
     return pd.DataFrame(rows)
 
@@ -81,12 +87,12 @@ if __name__ == "__main__":
         try:
             df = prep(fetch(s)); mid = df.index[0] + (df.index[-1] - df.index[0]) / 2
             warm = mid - pd.Timedelta(days=30)
-            if mode == "dev": d, start = df[df.index < mid], df.index[0]
+            if mode in ("dev", "diag"): d, start = df[df.index < mid], df.index[0]
             else: d, start = df[df.index >= warm], mid
             allt.append(run2(d, s, start))
         except Exception as e: print("fail", s, e)
     t = pd.concat(allt) if allt else pd.DataFrame()
-    out = {"mode": mode, "all": summarize(t)}
+    out = {"mode": mode, "all": summarize(t), "gates": G}
     if not t.empty:
         out["by_symbol"] = {k: summarize(g) for k, g in t.groupby("symbol")}
         out["by_exit"] = t.why.value_counts().to_dict()
