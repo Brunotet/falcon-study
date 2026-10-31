@@ -1,0 +1,68 @@
+{
+ "R_10": {
+  "error": "Handshake status 520 <none> -+-+- {'date': 'Sat, 31 Oct 2026 19:03:21 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, "
+ },
+ "R_25": {
+  "error": "Handshake status 520 <none> -+-+- {'date': 'Sat, 31 Oct 2026 19:03:26 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, "
+ },
+ "R_50": {
+  "error": "Handshake status 520 <none> -+-+- {'date': 'Sat, 31 Oct 2026 19:03:31 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, "
+ },
+ "R_75": {
+  "error": "Handshake status 520 <none> -+-+- {'date': 'Sat, 31 Oct 2026 19:03:36 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, "
+ },
+ "R_100": {
+  "error": "Handshake status 520 <none> -+-+- {'date': 'Sat, 31 Oct 2026 19:03:42 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, "
+ },
+ "1HZ10V": {
+  "error": "Handshake status 520 <none> -+-+- {'date': 'Sat, 31 Oct 2026 19:03:47 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, "
+ },
+ "1HZ25V": {
+  "error": "Handshake status 520 <none> -+-+- {'date': 'Sat, 31 Oct 2026 19:03:52 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, "
+ },
+ "1HZ50V": {
+  "error": "Handshake status 520 <none> -+-+- {'date': 'Sat, 31 Oct 2026 19:03:58 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, "
+ },
+ "1HZ75V": {
+  "error": "Handshake status 520 <none> -+-+- {'date': 'Sat, 31 Oct 2026 19:04:03 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, "
+ },
+ "1HZ100V": {
+  "error": "Handshake status 520 <none> -+-+- {'date': 'Sat, 31 Oct 2026 19:04:08 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, "
+ },
+ "BOOM500": {
+  "error": "Handshake status 520 <none> -+-+- {'date': 'Sat, 31 Oct 2026 19:04:13 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, "
+ },
+ "BOOM1000": {
+  "error": "Handshake status 520 <none> -+-+- {'date': 'Sat, 31 Oct 2026 19:04:18 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, "
+ },
+ "CRASH500": {
+  "error": "Handshake status 520 <none> -+-+- {'date': 'Sat, 31 Oct 2026 19:04:24 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, "
+ },
+ "CRASH1000": {
+  "error": "Handshake status 520 <none> -+-+- {'date': 'Sat, 31 Oct 2026 19:04:29 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, "
+ },
+ "stpRNG": {
+  "error": "Handshake status 520 <none> -+-+- {'date': 'Sat, 31 Oct 2026 19:04:34 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, "
+ },
+ "JD10": {
+  "error": "Handshake status 520 <none> -+-+- {'date': 'Sat, 31 Oct 2026 19:04:40 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, "
+ },
+ "JD25": {
+  "error": "Handshake status 520 <none> -+-+- {'date': 'Sat, 31 Oct 2026 19:04:45 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, "
+ },
+ "JD50": {
+  "error": "Handshake status 520 <none> -+-+- {'date': 'Sat, 31 Oct 2026 19:04:50 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, "
+ },
+ "JD75": {
+  "error": "Handshake status 520 <none> -+-+- {'date': 'Sat, 31 Oct 2026 19:04:56 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, "
+ },
+ "JD100": {
+  "error": "Handshake status 520 <none> -+-+- {'date': 'Sat, 31 Oct 2026 19:05:01 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, "
+ },
+ "RDBULL": {
+  "error": "Handshake status 520 <none> -+-+- {'date': 'Sat, 31 Oct 2026 19:05:07 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, "
+ },
+ "RDBEAR": {
+  "error": "Handshake status 520 <none> -+-+- {'date': 'Sat, 31 Oct 2026 19:05:12 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, "
+ }
+}
