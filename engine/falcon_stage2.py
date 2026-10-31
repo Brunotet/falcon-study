@@ -1,7 +1,7 @@
 """Falcon stage 2: tight flags only at the top of a 4H structure, target = next 4H structure low (>= 3R away),
 management: no quick break even at the top of a structure. Rules from strategy/falcon.md.
 Protocol (written before running): mode 'dev' = first year only, mode 'holdout' = second year, run once after freeze."""
-import sys, json
+import sys, json, os
 import numpy as np, pandas as pd
 from falcon_engine import P, prep, pipsize, find_setups, summarize, fetch
 
@@ -83,6 +83,7 @@ def run2(df, sym, start, p=P2):
 
 if __name__ == "__main__":
     mode = sys.argv[1]; syms = sys.argv[2].split(",")
+    ov = json.loads(os.environ.get("OVR", "{}") or "{}"); P.update(ov.get("P", {})); P2.update(ov.get("P2", {}))
     allt = []
     for s in syms:
         try:
@@ -93,7 +94,7 @@ if __name__ == "__main__":
             allt.append(run2(d, s, start))
         except Exception as e: print("fail", s, e)
     t = pd.concat(allt) if allt else pd.DataFrame()
-    out = {"mode": mode, "all": summarize(t), "gates": G}
+    out = {"mode": mode, "overrides": ov, "all": summarize(t), "gates": G}
     if not t.empty:
         out["by_symbol"] = {k: summarize(g) for k, g in t.groupby("symbol")}
         out["by_exit"] = t.why.value_counts().to_dict()
