@@ -7,6 +7,16 @@
   "total_r": -2.1,
   "profit_factor": 0.0
  },
+ "gates": {
+  "setups_total": 775,
+  "g4_not_in_top_area": 357,
+  "g2_pivots_too_close": 136,
+  "g3_lower_high": 276,
+  "g6_passed": 4,
+  "g0_history": 1,
+  "g7_order_never_filled": 2,
+  "g5_no_structure_low_3R": 1
+ },
  "by_symbol": {
   "EURUSD": {
    "trades": 1,
