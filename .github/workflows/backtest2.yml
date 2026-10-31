@@ -6,6 +6,11 @@ on:
       mode:
         description: "dev (first year) or holdout (second year, run once after the code is frozen)"
         default: dev
+      overrides:
+        description: 'JSON, e.g. {"P":{"imp_mult":3.5},"P2":{"area_frac":0.5}}'
+        default: '{}'
+      label:
+        default: base
       symbols:
         default: GBPUSD,EURUSD,USDJPY,GBPJPY,AUDUSD,NZDCAD,GBPCAD,USDCAD
 
@@ -17,6 +22,8 @@ jobs:
     runs-on: ubuntu-latest
     env:
       MODE: ${{ inputs.mode }}
+      OVR: ${{ inputs.overrides }}
+      LABEL: ${{ inputs.label }}
       SYMBOLS: ${{ inputs.symbols }}
     steps:
       - uses: actions/checkout@v4
@@ -27,13 +34,13 @@ jobs:
       - name: Backtest
         run: |
           mkdir -p results
-          python engine/falcon_stage2.py "$MODE" "$SYMBOLS" | tee "results/stage2-$MODE.json"
+          python engine/falcon_stage2.py "$MODE" "$SYMBOLS" | tee "results/stage2-$MODE-$LABEL.json"
       - name: Commit results
         if: always()
         run: |
           git config user.name "falcon-bot"
           git config user.email "falcon-bot@users.noreply.github.com"
           git add results
-          git diff --cached --quiet || git commit -m "backtest stage2: $MODE"
+          git diff --cached --quiet || git commit -m "backtest stage2: $MODE $LABEL"
           git pull --rebase origin main || true
           git push
