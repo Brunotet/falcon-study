@@ -1,0 +1,55 @@
+{
+ "JD75": {
+  "candles": 8762,
+  "costs": {
+   "0.0": {
+    "stage1_naive": {
+     "trades": 58,
+     "win_rate": 20.7,
+     "avg_r": 0.086,
+     "total_r": 5.0,
+     "profit_factor": 1.16
+    },
+    "stage2_top": {
+     "trades": 3,
+     "win_rate": 0.0,
+     "avg_r": -0.667,
+     "total_r": -2.0,
+     "profit_factor": 0.0
+    }
+   },
+   "1.0": {
+    "stage1_naive": {
+     "trades": 58,
+     "win_rate": 20.7,
+     "avg_r": 0.053,
+     "total_r": 3.1,
+     "profit_factor": 1.09
+    },
+    "stage2_top": {
+     "trades": 3,
+     "win_rate": 0.0,
+     "avg_r": -0.693,
+     "total_r": -2.1,
+     "profit_factor": 0.0
+    }
+   },
+   "2.0": {
+    "stage1_naive": {
+     "trades": 58,
+     "win_rate": 20.7,
+     "avg_r": 0.019,
+     "total_r": 1.1,
+     "profit_factor": 1.03
+    },
+    "stage2_top": {
+     "trades": 3,
+     "win_rate": 0.0,
+     "avg_r": -0.719,
+     "total_r": -2.2,
+     "profit_factor": 0.0
+    }
+   }
+  }
+ }
+}
