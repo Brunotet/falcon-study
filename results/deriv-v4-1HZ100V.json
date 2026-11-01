@@ -1,0 +1,55 @@
+{
+ "1HZ100V": {
+  "candles": 8762,
+  "costs": {
+   "0.0": {
+    "stage1_naive": {
+     "trades": 63,
+     "win_rate": 14.3,
+     "avg_r": -0.293,
+     "total_r": -18.4,
+     "profit_factor": 0.57
+    },
+    "stage2_top": {
+     "trades": 3,
+     "win_rate": 66.7,
+     "avg_r": 2.065,
+     "total_r": 6.2,
+     "profit_factor": 7.2
+    }
+   },
+   "1.0": {
+    "stage1_naive": {
+     "trades": 63,
+     "win_rate": 14.3,
+     "avg_r": -0.327,
+     "total_r": -20.6,
+     "profit_factor": 0.54
+    },
+    "stage2_top": {
+     "trades": 3,
+     "win_rate": 66.7,
+     "avg_r": 2.021,
+     "total_r": 6.1,
+     "profit_factor": 6.8
+    }
+   },
+   "2.0": {
+    "stage1_naive": {
+     "trades": 63,
+     "win_rate": 14.3,
+     "avg_r": -0.36,
+     "total_r": -22.7,
+     "profit_factor": 0.51
+    },
+    "stage2_top": {
+     "trades": 3,
+     "win_rate": 66.7,
+     "avg_r": 1.977,
+     "total_r": 5.9,
+     "profit_factor": 6.43
+    }
+   }
+  }
+ }
+}
