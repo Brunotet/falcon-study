@@ -9,7 +9,7 @@ import falcon_stage2 as f2
 
 SYMS = "R_10,R_25,R_50,R_75,R_100,1HZ10V,1HZ25V,1HZ50V,1HZ75V,1HZ100V,BOOM500,BOOM1000,CRASH500,CRASH1000,stpRNG,JD10,JD25,JD50,JD75,JD100,RDBULL,RDBEAR".split(",")
 
-HOSTS = ["wss://ws.derivws.com/websockets/v3?app_id=1089", "wss://ws.binaryws.com/websockets/v3?app_id=1089"]
+HOSTS = ["wss://api.derivws.com/trading/v1/options/ws/public", "wss://ws.derivws.com/websockets/v3?app_id=1089", "wss://ws.binaryws.com/websockets/v3?app_id=1089"]
 HDRS = ["User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120 Safari/537.36"]
 
 def connect():
