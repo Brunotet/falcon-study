@@ -1,0 +1,39 @@
+name: Falcon v7 Deriv backtest
+
+on:
+  workflow_dispatch:
+    inputs:
+      symbols:
+        default: JD10,JD75,JD100,1HZ75V,1HZ100V,1HZ150V
+      label:
+        default: v7
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    env:
+      SYMBOLS: ${{ inputs.symbols }}
+      LABEL: ${{ inputs.label }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install websocket-client pandas numpy matplotlib
+      - name: Backtest and draw entries
+        run: |
+          mkdir -p results
+          rm -rf "results/charts-$LABEL"
+          cd engine && python falcon_v7_deriv.py "$SYMBOLS" "../results/charts-$LABEL" 6 | tee "../results/deriv-$LABEL.json"
+      - name: Commit results
+        if: always()
+        run: |
+          git config user.name "falcon-bot"
+          git config user.email "falcon-bot@users.noreply.github.com"
+          git add results
+          git diff --cached --quiet || git commit -m "falcon v7 deriv backtest: $LABEL"
+          git pull --rebase origin main || true
+          git push
