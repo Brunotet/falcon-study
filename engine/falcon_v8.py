@@ -52,12 +52,12 @@ def find_R(o, h, l, c, pip, mm, at, p):
         last = i
     return out
 
-def add_struct_T(sets, mm, at, p):
+def add_struct_T(sets, mm, at, h, p):
     for x in sets:
         s = at(mm[x["t_idx"]]); x["kind"] = "T"
         if s and s["asc"]:
             line = s["a"] + s["slope"] * (x["t_idx"] - s["pos"])
-            x.update(at_line=bool(x["flag_high"] >= line - 2 * s["tol"]), touches=s["touches"], dbl=False, low=s["low"], lp=(s["pos"], s["a"], s["slope"]))
+            x.update(at_line=bool(h[x["s"]] >= line - 2 * s["tol"]), touches=s["touches"], dbl=False, low=s["low"], lp=(s["pos"], s["a"], s["slope"]))
         else: x.update(at_line=False, touches=0, dbl=False, low=None, lp=None)
         x["nest"] = bool(x["nest"])
     return sets
@@ -88,7 +88,7 @@ def run(df, sym, spread, pip, gap):
         a = [df[x].values.astype(float) for x in ("open", "high", "low", "close")]
         o, h, l, c = (a[0], a[1], a[2], a[3]) if sg > 0 else (-a[0], -a[2], -a[1], -a[3])
         mm, at = structure(df, sg)
-        sets = add_struct_T(v7.find(o, h, l, c, pip, p), mm, at, p) + find_R(o, h, l, c, pip, mm, at, p)
+        sets = add_struct_T(v7.find(o, h, l, c, pip, p), mm, at, h, p) + find_R(o, h, l, c, pip, mm, at, p)
         for x in sets:
             row = dict(symbol=sym, side=side, kind=x["kind"], s=x["s"], j=x["j"], nf=x["nf"], at_line=x["at_line"], touches=x["touches"], dbl=x["dbl"], nest=x["nest"],
                        entry=x["entry"], stop=x["stop"], lp=x["lp"], risk_pips=x["risk_pips"]); ok = False
