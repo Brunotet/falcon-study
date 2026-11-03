@@ -1,0 +1,381 @@
+{
+ "JD10": {
+  "candles": 30000,
+  "costs": {
+   "1.0": {}
+  }
+ },
+ "JD75": {
+  "candles": 30000,
+  "costs": {
+   "1.0": {}
+  }
+ },
+ "JD100": {
+  "candles": 30000,
+  "costs": {
+   "1.0": {}
+  }
+ },
+ "1HZ75V": {
+  "candles": 30000,
+  "costs": {
+   "1.0": {
+    "falcon_5m_alone": {
+     "struct_A": {
+      "trades": 2,
+      "win_rate": 50.0,
+      "avg_r": 2.539,
+      "total_r": 5.1,
+      "profit_factor": 5.98
+     },
+     "struct_B": {
+      "trades": 2,
+      "win_rate": 50.0,
+      "avg_r": 2.539,
+      "total_r": 5.1,
+      "profit_factor": 5.98
+     },
+     "3R_A": {
+      "trades": 2,
+      "win_rate": 50.0,
+      "avg_r": 0.982,
+      "total_r": 2.0,
+      "profit_factor": 2.93
+     }
+    },
+    "+F1_rsi2_overbought": {
+     "struct_A": {
+      "trades": 2,
+      "win_rate": 50.0,
+      "avg_r": 2.539,
+      "total_r": 5.1,
+      "profit_factor": 5.98
+     },
+     "struct_B": {
+      "trades": 2,
+      "win_rate": 50.0,
+      "avg_r": 2.539,
+      "total_r": 5.1,
+      "profit_factor": 5.98
+     },
+     "3R_A": {
+      "trades": 2,
+      "win_rate": 50.0,
+      "avg_r": 0.982,
+      "total_r": 2.0,
+      "profit_factor": 2.93
+     }
+    },
+    "+F2_ema200_trend": {
+     "struct_A": {
+      "trades": 2,
+      "win_rate": 50.0,
+      "avg_r": 2.539,
+      "total_r": 5.1,
+      "profit_factor": 5.98
+     },
+     "struct_B": {
+      "trades": 2,
+      "win_rate": 50.0,
+      "avg_r": 2.539,
+      "total_r": 5.1,
+      "profit_factor": 5.98
+     },
+     "3R_A": {
+      "trades": 2,
+      "win_rate": 50.0,
+      "avg_r": 0.982,
+      "total_r": 2.0,
+      "profit_factor": 2.93
+     }
+    },
+    "+F1_and_F2": {
+     "struct_A": {
+      "trades": 2,
+      "win_rate": 50.0,
+      "avg_r": 2.539,
+      "total_r": 5.1,
+      "profit_factor": 5.98
+     },
+     "struct_B": {
+      "trades": 2,
+      "win_rate": 50.0,
+      "avg_r": 2.539,
+      "total_r": 5.1,
+      "profit_factor": 5.98
+     },
+     "3R_A": {
+      "trades": 2,
+      "win_rate": 50.0,
+      "avg_r": 0.982,
+      "total_r": 2.0,
+      "profit_factor": 2.93
+     }
+    },
+    "alone_first_entry": {
+     "struct_A": {
+      "trades": 0
+     },
+     "struct_B": {
+      "trades": 0
+     },
+     "3R_A": {
+      "trades": 0
+     }
+    },
+    "F1F2_first_entry": {
+     "struct_A": {
+      "trades": 0
+     },
+     "struct_B": {
+      "trades": 0
+     },
+     "3R_A": {
+      "trades": 0
+     }
+    }
+   }
+  }
+ },
+ "1HZ150V": {
+  "candles": 30000,
+  "costs": {
+   "1.0": {}
+  }
+ },
+ "POOLED": {
+  "1.0": {
+   "falcon_5m_alone": {
+    "struct_A": {
+     "trades": 2,
+     "win_rate": 50.0,
+     "avg_r": 2.539,
+     "total_r": 5.1,
+     "profit_factor": 5.98
+    },
+    "struct_B": {
+     "trades": 2,
+     "win_rate": 50.0,
+     "avg_r": 2.539,
+     "total_r": 5.1,
+     "profit_factor": 5.98
+    },
+    "3R_A": {
+     "trades": 2,
+     "win_rate": 50.0,
+     "avg_r": 0.982,
+     "total_r": 2.0,
+     "profit_factor": 2.93
+    }
+   },
+   "+F1_rsi2_overbought": {
+    "struct_A": {
+     "trades": 2,
+     "win_rate": 50.0,
+     "avg_r": 2.539,
+     "total_r": 5.1,
+     "profit_factor": 5.98
+    },
+    "struct_B": {
+     "trades": 2,
+     "win_rate": 50.0,
+     "avg_r": 2.539,
+     "total_r": 5.1,
+     "profit_factor": 5.98
+    },
+    "3R_A": {
+     "trades": 2,
+     "win_rate": 50.0,
+     "avg_r": 0.982,
+     "total_r": 2.0,
+     "profit_factor": 2.93
+    }
+   },
+   "+F2_ema200_trend": {
+    "struct_A": {
+     "trades": 2,
+     "win_rate": 50.0,
+     "avg_r": 2.539,
+     "total_r": 5.1,
+     "profit_factor": 5.98
+    },
+    "struct_B": {
+     "trades": 2,
+     "win_rate": 50.0,
+     "avg_r": 2.539,
+     "total_r": 5.1,
+     "profit_factor": 5.98
+    },
+    "3R_A": {
+     "trades": 2,
+     "win_rate": 50.0,
+     "avg_r": 0.982,
+     "total_r": 2.0,
+     "profit_factor": 2.93
+    }
+   },
+   "+F1_and_F2": {
+    "struct_A": {
+     "trades": 2,
+     "win_rate": 50.0,
+     "avg_r": 2.539,
+     "total_r": 5.1,
+     "profit_factor": 5.98
+    },
+    "struct_B": {
+     "trades": 2,
+     "win_rate": 50.0,
+     "avg_r": 2.539,
+     "total_r": 5.1,
+     "profit_factor": 5.98
+    },
+    "3R_A": {
+     "trades": 2,
+     "win_rate": 50.0,
+     "avg_r": 0.982,
+     "total_r": 2.0,
+     "profit_factor": 2.93
+    }
+   },
+   "alone_first_entry": {
+    "struct_A": {
+     "trades": 0
+    },
+    "struct_B": {
+     "trades": 0
+    },
+    "3R_A": {
+     "trades": 0
+    }
+   },
+   "F1F2_first_entry": {
+    "struct_A": {
+     "trades": 0
+    },
+    "struct_B": {
+     "trades": 0
+    },
+    "3R_A": {
+     "trades": 0
+    }
+   }
+  },
+  "2.0": {
+   "falcon_5m_alone": {
+    "struct_A": {
+     "trades": 2,
+     "win_rate": 50.0,
+     "avg_r": 2.52,
+     "total_r": 5.0,
+     "profit_factor": 5.85
+    },
+    "struct_B": {
+     "trades": 2,
+     "win_rate": 50.0,
+     "avg_r": 2.52,
+     "total_r": 5.0,
+     "profit_factor": 5.85
+    },
+    "3R_A": {
+     "trades": 2,
+     "win_rate": 50.0,
+     "avg_r": 0.963,
+     "total_r": 1.9,
+     "profit_factor": 2.85
+    }
+   },
+   "+F1_rsi2_overbought": {
+    "struct_A": {
+     "trades": 2,
+     "win_rate": 50.0,
+     "avg_r": 2.52,
+     "total_r": 5.0,
+     "profit_factor": 5.85
+    },
+    "struct_B": {
+     "trades": 2,
+     "win_rate": 50.0,
+     "avg_r": 2.52,
+     "total_r": 5.0,
+     "profit_factor": 5.85
+    },
+    "3R_A": {
+     "trades": 2,
+     "win_rate": 50.0,
+     "avg_r": 0.963,
+     "total_r": 1.9,
+     "profit_factor": 2.85
+    }
+   },
+   "+F2_ema200_trend": {
+    "struct_A": {
+     "trades": 2,
+     "win_rate": 50.0,
+     "avg_r": 2.52,
+     "total_r": 5.0,
+     "profit_factor": 5.85
+    },
+    "struct_B": {
+     "trades": 2,
+     "win_rate": 50.0,
+     "avg_r": 2.52,
+     "total_r": 5.0,
+     "profit_factor": 5.85
+    },
+    "3R_A": {
+     "trades": 2,
+     "win_rate": 50.0,
+     "avg_r": 0.963,
+     "total_r": 1.9,
+     "profit_factor": 2.85
+    }
+   },
+   "+F1_and_F2": {
+    "struct_A": {
+     "trades": 2,
+     "win_rate": 50.0,
+     "avg_r": 2.52,
+     "total_r": 5.0,
+     "profit_factor": 5.85
+    },
+    "struct_B": {
+     "trades": 2,
+     "win_rate": 50.0,
+     "avg_r": 2.52,
+     "total_r": 5.0,
+     "profit_factor": 5.85
+    },
+    "3R_A": {
+     "trades": 2,
+     "win_rate": 50.0,
+     "avg_r": 0.963,
+     "total_r": 1.9,
+     "profit_factor": 2.85
+    }
+   },
+   "alone_first_entry": {
+    "struct_A": {
+     "trades": 0
+    },
+    "struct_B": {
+     "trades": 0
+    },
+    "3R_A": {
+     "trades": 0
+    }
+   },
+   "F1F2_first_entry": {
+    "struct_A": {
+     "trades": 0
+    },
+    "struct_B": {
+     "trades": 0
+    },
+    "3R_A": {
+     "trades": 0
+    }
+   }
+  }
+ }
+}
