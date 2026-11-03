@@ -1,0 +1,1528 @@
+{
+ "BOOM1000": {
+  "candles": 30000,
+  "costs": {
+   "1.0": {
+    "all": {
+     "struct_A": {
+      "trades": 1,
+      "win_rate": 0.0,
+      "avg_r": -0.024,
+      "total_r": -0.0,
+      "profit_factor": 0.0
+     },
+     "struct_B": {
+      "trades": 1,
+      "win_rate": 0.0,
+      "avg_r": -0.024,
+      "total_r": -0.0,
+      "profit_factor": 0.0
+     },
+     "3R_A": {
+      "trades": 1,
+      "win_rate": 0.0,
+      "avg_r": -0.024,
+      "total_r": -0.0,
+      "profit_factor": 0.0
+     }
+    },
+    "touch3_top": {
+     "struct_A": {
+      "trades": 0
+     },
+     "struct_B": {
+      "trades": 0
+     },
+     "3R_A": {
+      "trades": 0
+     }
+    },
+    "first_entry": {
+     "struct_A": {
+      "trades": 0
+     },
+     "struct_B": {
+      "trades": 0
+     },
+     "3R_A": {
+      "trades": 0
+     }
+    },
+    "re_entry": {
+     "struct_A": {
+      "trades": 1,
+      "win_rate": 0.0,
+      "avg_r": -0.024,
+      "total_r": -0.0,
+      "profit_factor": 0.0
+     },
+     "struct_B": {
+      "trades": 1,
+      "win_rate": 0.0,
+      "avg_r": -0.024,
+      "total_r": -0.0,
+      "profit_factor": 0.0
+     },
+     "3R_A": {
+      "trades": 1,
+      "win_rate": 0.0,
+      "avg_r": -0.024,
+      "total_r": -0.0,
+      "profit_factor": 0.0
+     }
+    },
+    "bias_impulse": {
+     "struct_A": {
+      "trades": 1,
+      "win_rate": 0.0,
+      "avg_r": -0.024,
+      "total_r": -0.0,
+      "profit_factor": 0.0
+     },
+     "struct_B": {
+      "trades": 1,
+      "win_rate": 0.0,
+      "avg_r": -0.024,
+      "total_r": -0.0,
+      "profit_factor": 0.0
+     },
+     "3R_A": {
+      "trades": 1,
+      "win_rate": 0.0,
+      "avg_r": -0.024,
+      "total_r": -0.0,
+      "profit_factor": 0.0
+     }
+    },
+    "bias_structure": {
+     "struct_A": {
+      "trades": 0
+     },
+     "struct_B": {
+      "trades": 0
+     },
+     "3R_A": {
+      "trades": 0
+     }
+    },
+    "nested_flag": {
+     "struct_A": {
+      "trades": 1,
+      "win_rate": 0.0,
+      "avg_r": -0.024,
+      "total_r": -0.0,
+      "profit_factor": 0.0
+     },
+     "struct_B": {
+      "trades": 1,
+      "win_rate": 0.0,
+      "avg_r": -0.024,
+      "total_r": -0.0,
+      "profit_factor": 0.0
+     },
+     "3R_A": {
+      "trades": 1,
+      "win_rate": 0.0,
+      "avg_r": -0.024,
+      "total_r": -0.0,
+      "profit_factor": 0.0
+     }
+    },
+    "first_impulse_bias": {
+     "struct_A": {
+      "trades": 0
+     },
+     "struct_B": {
+      "trades": 0
+     },
+     "3R_A": {
+      "trades": 0
+     }
+    }
+   }
+  }
+ },
+ "BOOM500": {
+  "candles": 30000,
+  "costs": {
+   "1.0": {
+    "all": {
+     "struct_A": {
+      "trades": 3,
+      "win_rate": 0.0,
+      "avg_r": -0.699,
+      "total_r": -2.1,
+      "profit_factor": 0.0
+     },
+     "struct_B": {
+      "trades": 3,
+      "win_rate": 33.3,
+      "avg_r": 0.676,
+      "total_r": 2.0,
+      "profit_factor": 1.98
+     },
+     "3R_A": {
+      "trades": 3,
+      "win_rate": 0.0,
+      "avg_r": -0.699,
+      "total_r": -2.1,
+      "profit_factor": 0.0
+     }
+    },
+    "touch3_top": {
+     "struct_A": {
+      "trades": 1,
+      "win_rate": 0.0,
+      "avg_r": -0.034,
+      "total_r": -0.0,
+      "profit_factor": 0.0
+     },
+     "struct_B": {
+      "trades": 1,
+      "win_rate": 100.0,
+      "avg_r": 4.093,
+      "total_r": 4.1,
+      "profit_factor": null
+     },
+     "3R_A": {
+      "trades": 1,
+      "win_rate": 0.0,
+      "avg_r": -0.034,
+      "total_r": -0.0,
+      "profit_factor": 0.0
+     }
+    },
+    "first_entry": {
+     "struct_A": {
+      "trades": 0
+     },
+     "struct_B": {
+      "trades": 0
+     },
+     "3R_A": {
+      "trades": 0
+     }
+    },
+    "re_entry": {
+     "struct_A": {
+      "trades": 3,
+      "win_rate": 0.0,
+      "avg_r": -0.699,
+      "total_r": -2.1,
+      "profit_factor": 0.0
+     },
+     "struct_B": {
+      "trades": 3,
+      "win_rate": 33.3,
+      "avg_r": 0.676,
+      "total_r": 2.0,
+      "profit_factor": 1.98
+     },
+     "3R_A": {
+      "trades": 3,
+      "win_rate": 0.0,
+      "avg_r": -0.699,
+      "total_r": -2.1,
+      "profit_factor": 0.0
+     }
+    },
+    "bias_impulse": {
+     "struct_A": {
+      "trades": 3,
+      "win_rate": 0.0,
+      "avg_r": -0.699,
+      "total_r": -2.1,
+      "profit_factor": 0.0
+     },
+     "struct_B": {
+      "trades": 3,
+      "win_rate": 33.3,
+      "avg_r": 0.676,
+      "total_r": 2.0,
+      "profit_factor": 1.98
+     },
+     "3R_A": {
+      "trades": 3,
+      "win_rate": 0.0,
+      "avg_r": -0.699,
+      "total_r": -2.1,
+      "profit_factor": 0.0
+     }
+    },
+    "bias_structure": {
+     "struct_A": {
+      "trades": 0
+     },
+     "struct_B": {
+      "trades": 0
+     },
+     "3R_A": {
+      "trades": 0
+     }
+    },
+    "nested_flag": {
+     "struct_A": {
+      "trades": 1,
+      "win_rate": 0.0,
+      "avg_r": -1.027,
+      "total_r": -1.0,
+      "profit_factor": 0.0
+     },
+     "struct_B": {
+      "trades": 1,
+      "win_rate": 0.0,
+      "avg_r": -1.027,
+      "total_r": -1.0,
+      "profit_factor": 0.0
+     },
+     "3R_A": {
+      "trades": 1,
+      "win_rate": 0.0,
+      "avg_r": -1.027,
+      "total_r": -1.0,
+      "profit_factor": 0.0
+     }
+    },
+    "first_impulse_bias": {
+     "struct_A": {
+      "trades": 0
+     },
+     "struct_B": {
+      "trades": 0
+     },
+     "3R_A": {
+      "trades": 0
+     }
+    }
+   }
+  }
+ },
+ "BOOM300N": {
+  "candles": 30000,
+  "costs": {
+   "1.0": {
+    "all": {
+     "struct_A": {
+      "trades": 5,
+      "win_rate": 20.0,
+      "avg_r": 0.22,
+      "total_r": 1.1,
+      "profit_factor": 1.53
+     },
+     "struct_B": {
+      "trades": 5,
+      "win_rate": 40.0,
+      "avg_r": 0.949,
+      "total_r": 4.7,
+      "profit_factor": 3.3
+     },
+     "3R_A": {
+      "trades": 5,
+      "win_rate": 40.0,
+      "avg_r": 0.775,
+      "total_r": 3.9,
+      "profit_factor": 2.88
+     }
+    },
+    "touch3_top": {
+     "struct_A": {
+      "trades": 0
+     },
+     "struct_B": {
+      "trades": 0
+     },
+     "3R_A": {
+      "trades": 0
+     }
+    },
+    "first_entry": {
+     "struct_A": {
+      "trades": 2,
+      "win_rate": 50.0,
+      "avg_r": 1.582,
+      "total_r": 3.2,
+      "profit_factor": 218.58
+     },
+     "struct_B": {
+      "trades": 2,
+      "win_rate": 50.0,
+      "avg_r": 1.582,
+      "total_r": 3.2,
+      "profit_factor": 218.58
+     },
+     "3R_A": {
+      "trades": 2,
+      "win_rate": 100.0,
+      "avg_r": 2.972,
+      "total_r": 5.9,
+      "profit_factor": null
+     }
+    },
+    "re_entry": {
+     "struct_A": {
+      "trades": 3,
+      "win_rate": 0.0,
+      "avg_r": -0.689,
+      "total_r": -2.1,
+      "profit_factor": 0.0
+     },
+     "struct_B": {
+      "trades": 3,
+      "win_rate": 33.3,
+      "avg_r": 0.526,
+      "total_r": 1.6,
+      "profit_factor": 1.77
+     },
+     "3R_A": {
+      "trades": 3,
+      "win_rate": 0.0,
+      "avg_r": -0.689,
+      "total_r": -2.1,
+      "profit_factor": 0.0
+     }
+    },
+    "bias_impulse": {
+     "struct_A": {
+      "trades": 3,
+      "win_rate": 33.3,
+      "avg_r": 0.712,
+      "total_r": 2.1,
+      "profit_factor": 3.05
+     },
+     "struct_B": {
+      "trades": 3,
+      "win_rate": 33.3,
+      "avg_r": 0.712,
+      "total_r": 2.1,
+      "profit_factor": 3.05
+     },
+     "3R_A": {
+      "trades": 3,
+      "win_rate": 66.7,
+      "avg_r": 1.638,
+      "total_r": 4.9,
+      "profit_factor": 5.78
+     }
+    },
+    "bias_structure": {
+     "struct_A": {
+      "trades": 2,
+      "win_rate": 0.0,
+      "avg_r": -0.519,
+      "total_r": -1.0,
+      "profit_factor": 0.0
+     },
+     "struct_B": {
+      "trades": 2,
+      "win_rate": 50.0,
+      "avg_r": 1.304,
+      "total_r": 2.6,
+      "profit_factor": 3.55
+     },
+     "3R_A": {
+      "trades": 2,
+      "win_rate": 0.0,
+      "avg_r": -0.519,
+      "total_r": -1.0,
+      "profit_factor": 0.0
+     }
+    },
+    "nested_flag": {
+     "struct_A": {
+      "trades": 3,
+      "win_rate": 33.3,
+      "avg_r": 1.05,
+      "total_r": 3.2,
+      "profit_factor": 111.55
+     },
+     "struct_B": {
+      "trades": 3,
+      "win_rate": 66.7,
+      "avg_r": 2.265,
+      "total_r": 6.8,
+      "profit_factor": 468.26
+     },
+     "3R_A": {
+      "trades": 3,
+      "win_rate": 66.7,
+      "avg_r": 1.977,
+      "total_r": 5.9,
+      "profit_factor": 425.91
+     }
+    },
+    "first_impulse_bias": {
+     "struct_A": {
+      "trades": 2,
+      "win_rate": 50.0,
+      "avg_r": 1.582,
+      "total_r": 3.2,
+      "profit_factor": 218.58
+     },
+     "struct_B": {
+      "trades": 2,
+      "win_rate": 50.0,
+      "avg_r": 1.582,
+      "total_r": 3.2,
+      "profit_factor": 218.58
+     },
+     "3R_A": {
+      "trades": 2,
+      "win_rate": 100.0,
+      "avg_r": 2.972,
+      "total_r": 5.9,
+      "profit_factor": null
+     }
+    }
+   }
+  }
+ },
+ "CRASH1000": {
+  "candles": 30000,
+  "costs": {
+   "1.0": {
+    "all": {
+     "struct_A": {
+      "trades": 4,
+      "win_rate": 0.0,
+      "avg_r": -0.775,
+      "total_r": -3.1,
+      "profit_factor": 0.0
+     },
+     "struct_B": {
+      "trades": 4,
+      "win_rate": 0.0,
+      "avg_r": -0.775,
+      "total_r": -3.1,
+      "profit_factor": 0.0
+     },
+     "3R_A": {
+      "trades": 4,
+      "win_rate": 0.0,
+      "avg_r": -0.775,
+      "total_r": -3.1,
+      "profit_factor": 0.0
+     }
+    },
+    "touch3_top": {
+     "struct_A": {
+      "trades": 1,
+      "win_rate": 0.0,
+      "avg_r": -1.031,
+      "total_r": -1.0,
+      "profit_factor": 0.0
+     },
+     "struct_B": {
+      "trades": 1,
+      "win_rate": 0.0,
+      "avg_r": -1.031,
+      "total_r": -1.0,
+      "profit_factor": 0.0
+     },
+     "3R_A": {
+      "trades": 1,
+      "win_rate": 0.0,
+      "avg_r": -1.031,
+      "total_r": -1.0,
+      "profit_factor": 0.0
+     }
+    },
+    "first_entry": {
+     "struct_A": {
+      "trades": 0
+     },
+     "struct_B": {
+      "trades": 0
+     },
+     "3R_A": {
+      "trades": 0
+     }
+    },
+    "re_entry": {
+     "struct_A": {
+      "trades": 4,
+      "win_rate": 0.0,
+      "avg_r": -0.775,
+      "total_r": -3.1,
+      "profit_factor": 0.0
+     },
+     "struct_B": {
+      "trades": 4,
+      "win_rate": 0.0,
+      "avg_r": -0.775,
+      "total_r": -3.1,
+      "profit_factor": 0.0
+     },
+     "3R_A": {
+      "trades": 4,
+      "win_rate": 0.0,
+      "avg_r": -0.775,
+      "total_r": -3.1,
+      "profit_factor": 0.0
+     }
+    },
+    "bias_impulse": {
+     "struct_A": {
+      "trades": 3,
+      "win_rate": 0.0,
+      "avg_r": -0.691,
+      "total_r": -2.1,
+      "profit_factor": 0.0
+     },
+     "struct_B": {
+      "trades": 3,
+      "win_rate": 0.0,
+      "avg_r": -0.691,
+      "total_r": -2.1,
+      "profit_factor": 0.0
+     },
+     "3R_A": {
+      "trades": 3,
+      "win_rate": 0.0,
+      "avg_r": -0.691,
+      "total_r": -2.1,
+      "profit_factor": 0.0
+     }
+    },
+    "bias_structure": {
+     "struct_A": {
+      "trades": 1,
+      "win_rate": 0.0,
+      "avg_r": -1.029,
+      "total_r": -1.0,
+      "profit_factor": 0.0
+     },
+     "struct_B": {
+      "trades": 1,
+      "win_rate": 0.0,
+      "avg_r": -1.029,
+      "total_r": -1.0,
+      "profit_factor": 0.0
+     },
+     "3R_A": {
+      "trades": 1,
+      "win_rate": 0.0,
+      "avg_r": -1.029,
+      "total_r": -1.0,
+      "profit_factor": 0.0
+     }
+    },
+    "nested_flag": {
+     "struct_A": {
+      "trades": 4,
+      "win_rate": 0.0,
+      "avg_r": -0.775,
+      "total_r": -3.1,
+      "profit_factor": 0.0
+     },
+     "struct_B": {
+      "trades": 4,
+      "win_rate": 0.0,
+      "avg_r": -0.775,
+      "total_r": -3.1,
+      "profit_factor": 0.0
+     },
+     "3R_A": {
+      "trades": 4,
+      "win_rate": 0.0,
+      "avg_r": -0.775,
+      "total_r": -3.1,
+      "profit_factor": 0.0
+     }
+    },
+    "first_impulse_bias": {
+     "struct_A": {
+      "trades": 0
+     },
+     "struct_B": {
+      "trades": 0
+     },
+     "3R_A": {
+      "trades": 0
+     }
+    }
+   }
+  }
+ },
+ "CRASH500": {
+  "candles": 30000,
+  "costs": {
+   "1.0": {
+    "all": {
+     "struct_A": {
+      "trades": 2,
+      "win_rate": 0.0,
+      "avg_r": -0.527,
+      "total_r": -1.1,
+      "profit_factor": 0.0
+     },
+     "struct_B": {
+      "trades": 2,
+      "win_rate": 0.0,
+      "avg_r": -0.527,
+      "total_r": -1.1,
+      "profit_factor": 0.0
+     },
+     "3R_A": {
+      "trades": 2,
+      "win_rate": 50.0,
+      "avg_r": 0.973,
+      "total_r": 1.9,
+      "profit_factor": 2.9
+     }
+    },
+    "touch3_top": {
+     "struct_A": {
+      "trades": 1,
+      "win_rate": 0.0,
+      "avg_r": -0.03,
+      "total_r": -0.0,
+      "profit_factor": 0.0
+     },
+     "struct_B": {
+      "trades": 1,
+      "win_rate": 0.0,
+      "avg_r": -0.03,
+      "total_r": -0.0,
+      "profit_factor": 0.0
+     },
+     "3R_A": {
+      "trades": 1,
+      "win_rate": 100.0,
+      "avg_r": 2.97,
+      "total_r": 3.0,
+      "profit_factor": null
+     }
+    },
+    "first_entry": {
+     "struct_A": {
+      "trades": 0
+     },
+     "struct_B": {
+      "trades": 0
+     },
+     "3R_A": {
+      "trades": 0
+     }
+    },
+    "re_entry": {
+     "struct_A": {
+      "trades": 2,
+      "win_rate": 0.0,
+      "avg_r": -0.527,
+      "total_r": -1.1,
+      "profit_factor": 0.0
+     },
+     "struct_B": {
+      "trades": 2,
+      "win_rate": 0.0,
+      "avg_r": -0.527,
+      "total_r": -1.1,
+      "profit_factor": 0.0
+     },
+     "3R_A": {
+      "trades": 2,
+      "win_rate": 50.0,
+      "avg_r": 0.973,
+      "total_r": 1.9,
+      "profit_factor": 2.9
+     }
+    },
+    "bias_impulse": {
+     "struct_A": {
+      "trades": 2,
+      "win_rate": 0.0,
+      "avg_r": -0.527,
+      "total_r": -1.1,
+      "profit_factor": 0.0
+     },
+     "struct_B": {
+      "trades": 2,
+      "win_rate": 0.0,
+      "avg_r": -0.527,
+      "total_r": -1.1,
+      "profit_factor": 0.0
+     },
+     "3R_A": {
+      "trades": 2,
+      "win_rate": 50.0,
+      "avg_r": 0.973,
+      "total_r": 1.9,
+      "profit_factor": 2.9
+     }
+    },
+    "bias_structure": {
+     "struct_A": {
+      "trades": 0
+     },
+     "struct_B": {
+      "trades": 0
+     },
+     "3R_A": {
+      "trades": 0
+     }
+    },
+    "nested_flag": {
+     "struct_A": {
+      "trades": 0
+     },
+     "struct_B": {
+      "trades": 0
+     },
+     "3R_A": {
+      "trades": 0
+     }
+    },
+    "first_impulse_bias": {
+     "struct_A": {
+      "trades": 0
+     },
+     "struct_B": {
+      "trades": 0
+     },
+     "3R_A": {
+      "trades": 0
+     }
+    }
+   }
+  }
+ },
+ "CRASH300N": {
+  "candles": 30000,
+  "costs": {
+   "1.0": {
+    "all": {
+     "struct_A": {
+      "trades": 5,
+      "win_rate": 0.0,
+      "avg_r": -0.633,
+      "total_r": -3.2,
+      "profit_factor": 0.0
+     },
+     "struct_B": {
+      "trades": 5,
+      "win_rate": 0.0,
+      "avg_r": -1.033,
+      "total_r": -5.2,
+      "profit_factor": 0.0
+     },
+     "3R_A": {
+      "trades": 5,
+      "win_rate": 0.0,
+      "avg_r": -0.633,
+      "total_r": -3.2,
+      "profit_factor": 0.0
+     }
+    },
+    "touch3_top": {
+     "struct_A": {
+      "trades": 2,
+      "win_rate": 0.0,
+      "avg_r": -1.036,
+      "total_r": -2.1,
+      "profit_factor": 0.0
+     },
+     "struct_B": {
+      "trades": 2,
+      "win_rate": 0.0,
+      "avg_r": -1.036,
+      "total_r": -2.1,
+      "profit_factor": 0.0
+     },
+     "3R_A": {
+      "trades": 2,
+      "win_rate": 0.0,
+      "avg_r": -1.036,
+      "total_r": -2.1,
+      "profit_factor": 0.0
+     }
+    },
+    "first_entry": {
+     "struct_A": {
+      "trades": 2,
+      "win_rate": 0.0,
+      "avg_r": -0.531,
+      "total_r": -1.1,
+      "profit_factor": 0.0
+     },
+     "struct_B": {
+      "trades": 2,
+      "win_rate": 0.0,
+      "avg_r": -1.031,
+      "total_r": -2.1,
+      "profit_factor": 0.0
+     },
+     "3R_A": {
+      "trades": 2,
+      "win_rate": 0.0,
+      "avg_r": -0.531,
+      "total_r": -1.1,
+      "profit_factor": 0.0
+     }
+    },
+    "re_entry": {
+     "struct_A": {
+      "trades": 3,
+      "win_rate": 0.0,
+      "avg_r": -0.701,
+      "total_r": -2.1,
+      "profit_factor": 0.0
+     },
+     "struct_B": {
+      "trades": 3,
+      "win_rate": 0.0,
+      "avg_r": -1.034,
+      "total_r": -3.1,
+      "profit_factor": 0.0
+     },
+     "3R_A": {
+      "trades": 3,
+      "win_rate": 0.0,
+      "avg_r": -0.701,
+      "total_r": -2.1,
+      "profit_factor": 0.0
+     }
+    },
+    "bias_impulse": {
+     "struct_A": {
+      "trades": 5,
+      "win_rate": 0.0,
+      "avg_r": -0.633,
+      "total_r": -3.2,
+      "profit_factor": 0.0
+     },
+     "struct_B": {
+      "trades": 5,
+      "win_rate": 0.0,
+      "avg_r": -1.033,
+      "total_r": -5.2,
+      "profit_factor": 0.0
+     },
+     "3R_A": {
+      "trades": 5,
+      "win_rate": 0.0,
+      "avg_r": -0.633,
+      "total_r": -3.2,
+      "profit_factor": 0.0
+     }
+    },
+    "bias_structure": {
+     "struct_A": {
+      "trades": 0
+     },
+     "struct_B": {
+      "trades": 0
+     },
+     "3R_A": {
+      "trades": 0
+     }
+    },
+    "nested_flag": {
+     "struct_A": {
+      "trades": 3,
+      "win_rate": 0.0,
+      "avg_r": -0.697,
+      "total_r": -2.1,
+      "profit_factor": 0.0
+     },
+     "struct_B": {
+      "trades": 3,
+      "win_rate": 0.0,
+      "avg_r": -1.03,
+      "total_r": -3.1,
+      "profit_factor": 0.0
+     },
+     "3R_A": {
+      "trades": 3,
+      "win_rate": 0.0,
+      "avg_r": -0.697,
+      "total_r": -2.1,
+      "profit_factor": 0.0
+     }
+    },
+    "first_impulse_bias": {
+     "struct_A": {
+      "trades": 2,
+      "win_rate": 0.0,
+      "avg_r": -0.531,
+      "total_r": -1.1,
+      "profit_factor": 0.0
+     },
+     "struct_B": {
+      "trades": 2,
+      "win_rate": 0.0,
+      "avg_r": -1.031,
+      "total_r": -2.1,
+      "profit_factor": 0.0
+     },
+     "3R_A": {
+      "trades": 2,
+      "win_rate": 0.0,
+      "avg_r": -0.531,
+      "total_r": -1.1,
+      "profit_factor": 0.0
+     }
+    }
+   }
+  }
+ },
+ "POOLED": {
+  "0.0": {
+   "all": {
+    "struct_A": {
+     "trades": 20,
+     "win_rate": 5.0,
+     "avg_r": -0.389,
+     "total_r": -7.8,
+     "profit_factor": 0.29
+    },
+    "struct_B": {
+     "trades": 20,
+     "win_rate": 15.0,
+     "avg_r": -0.1,
+     "total_r": -2.0,
+     "profit_factor": 0.85
+    },
+    "3R_A": {
+     "trades": 20,
+     "win_rate": 15.0,
+     "avg_r": -0.1,
+     "total_r": -2.0,
+     "profit_factor": 0.82
+    }
+   },
+   "touch3_top": {
+    "struct_A": {
+     "trades": 5,
+     "win_rate": 0.0,
+     "avg_r": -0.6,
+     "total_r": -3.0,
+     "profit_factor": 0.0
+    },
+    "struct_B": {
+     "trades": 5,
+     "win_rate": 20.0,
+     "avg_r": 0.225,
+     "total_r": 1.1,
+     "profit_factor": 1.38
+    },
+    "3R_A": {
+     "trades": 5,
+     "win_rate": 20.0,
+     "avg_r": 0.0,
+     "total_r": 0.0,
+     "profit_factor": 1.0
+    }
+   },
+   "first_entry": {
+    "struct_A": {
+     "trades": 4,
+     "win_rate": 25.0,
+     "avg_r": 0.555,
+     "total_r": 2.2,
+     "profit_factor": 3.22
+    },
+    "struct_B": {
+     "trades": 4,
+     "win_rate": 25.0,
+     "avg_r": 0.305,
+     "total_r": 1.2,
+     "profit_factor": 1.61
+    },
+    "3R_A": {
+     "trades": 4,
+     "win_rate": 50.0,
+     "avg_r": 1.25,
+     "total_r": 5.0,
+     "profit_factor": 6.0
+    }
+   },
+   "re_entry": {
+    "struct_A": {
+     "trades": 16,
+     "win_rate": 0.0,
+     "avg_r": -0.625,
+     "total_r": -10.0,
+     "profit_factor": 0.0
+    },
+    "struct_B": {
+     "trades": 16,
+     "win_rate": 12.5,
+     "avg_r": -0.202,
+     "total_r": -3.2,
+     "profit_factor": 0.71
+    },
+    "3R_A": {
+     "trades": 16,
+     "win_rate": 6.2,
+     "avg_r": -0.438,
+     "total_r": -7.0,
+     "profit_factor": 0.3
+    }
+   },
+   "bias_impulse": {
+    "struct_A": {
+     "trades": 17,
+     "win_rate": 5.9,
+     "avg_r": -0.34,
+     "total_r": -5.8,
+     "profit_factor": 0.36
+    },
+    "struct_B": {
+     "trades": 17,
+     "win_rate": 11.8,
+     "avg_r": -0.215,
+     "total_r": -3.7,
+     "profit_factor": 0.67
+    },
+    "3R_A": {
+     "trades": 17,
+     "win_rate": 17.6,
+     "avg_r": 0.0,
+     "total_r": 0.0,
+     "profit_factor": 1.0
+    }
+   },
+   "bias_structure": {
+    "struct_A": {
+     "trades": 3,
+     "win_rate": 0.0,
+     "avg_r": -0.667,
+     "total_r": -2.0,
+     "profit_factor": 0.0
+    },
+    "struct_B": {
+     "trades": 3,
+     "win_rate": 33.3,
+     "avg_r": 0.548,
+     "total_r": 1.6,
+     "profit_factor": 1.82
+    },
+    "3R_A": {
+     "trades": 3,
+     "win_rate": 0.0,
+     "avg_r": -0.667,
+     "total_r": -2.0,
+     "profit_factor": 0.0
+    }
+   },
+   "nested_flag": {
+    "struct_A": {
+     "trades": 12,
+     "win_rate": 8.3,
+     "avg_r": -0.232,
+     "total_r": -2.8,
+     "profit_factor": 0.54
+    },
+    "struct_B": {
+     "trades": 12,
+     "win_rate": 16.7,
+     "avg_r": -0.011,
+     "total_r": -0.1,
+     "profit_factor": 0.98
+    },
+    "3R_A": {
+     "trades": 12,
+     "win_rate": 16.7,
+     "avg_r": 0.0,
+     "total_r": 0.0,
+     "profit_factor": 1.0
+    }
+   },
+   "first_impulse_bias": {
+    "struct_A": {
+     "trades": 4,
+     "win_rate": 25.0,
+     "avg_r": 0.555,
+     "total_r": 2.2,
+     "profit_factor": 3.22
+    },
+    "struct_B": {
+     "trades": 4,
+     "win_rate": 25.0,
+     "avg_r": 0.305,
+     "total_r": 1.2,
+     "profit_factor": 1.61
+    },
+    "3R_A": {
+     "trades": 4,
+     "win_rate": 50.0,
+     "avg_r": 1.25,
+     "total_r": 5.0,
+     "profit_factor": 6.0
+    }
+   }
+  },
+  "1.0": {
+   "all": {
+    "struct_A": {
+     "trades": 20,
+     "win_rate": 5.0,
+     "avg_r": -0.417,
+     "total_r": -8.3,
+     "profit_factor": 0.28
+    },
+    "struct_B": {
+     "trades": 20,
+     "win_rate": 15.0,
+     "avg_r": -0.129,
+     "total_r": -2.6,
+     "profit_factor": 0.81
+    },
+    "3R_A": {
+     "trades": 20,
+     "win_rate": 15.0,
+     "avg_r": -0.128,
+     "total_r": -2.6,
+     "profit_factor": 0.78
+    }
+   },
+   "touch3_top": {
+    "struct_A": {
+     "trades": 5,
+     "win_rate": 0.0,
+     "avg_r": -0.634,
+     "total_r": -3.2,
+     "profit_factor": 0.0
+    },
+    "struct_B": {
+     "trades": 5,
+     "win_rate": 20.0,
+     "avg_r": 0.192,
+     "total_r": 1.0,
+     "profit_factor": 1.31
+    },
+    "3R_A": {
+     "trades": 5,
+     "win_rate": 20.0,
+     "avg_r": -0.034,
+     "total_r": -0.2,
+     "profit_factor": 0.95
+    }
+   },
+   "first_entry": {
+    "struct_A": {
+     "trades": 4,
+     "win_rate": 25.0,
+     "avg_r": 0.526,
+     "total_r": 2.1,
+     "profit_factor": 2.95
+    },
+    "struct_B": {
+     "trades": 4,
+     "win_rate": 25.0,
+     "avg_r": 0.276,
+     "total_r": 1.1,
+     "profit_factor": 1.53
+    },
+    "3R_A": {
+     "trades": 4,
+     "win_rate": 50.0,
+     "avg_r": 1.22,
+     "total_r": 4.9,
+     "profit_factor": 5.6
+    }
+   },
+   "re_entry": {
+    "struct_A": {
+     "trades": 16,
+     "win_rate": 0.0,
+     "avg_r": -0.653,
+     "total_r": -10.4,
+     "profit_factor": 0.0
+    },
+    "struct_B": {
+     "trades": 16,
+     "win_rate": 12.5,
+     "avg_r": -0.23,
+     "total_r": -3.7,
+     "profit_factor": 0.68
+    },
+    "3R_A": {
+     "trades": 16,
+     "win_rate": 6.2,
+     "avg_r": -0.465,
+     "total_r": -7.4,
+     "profit_factor": 0.29
+    }
+   },
+   "bias_impulse": {
+    "struct_A": {
+     "trades": 17,
+     "win_rate": 5.9,
+     "avg_r": -0.369,
+     "total_r": -6.3,
+     "profit_factor": 0.34
+    },
+    "struct_B": {
+     "trades": 17,
+     "win_rate": 11.8,
+     "avg_r": -0.244,
+     "total_r": -4.2,
+     "profit_factor": 0.64
+    },
+    "3R_A": {
+     "trades": 17,
+     "win_rate": 17.6,
+     "avg_r": -0.029,
+     "total_r": -0.5,
+     "profit_factor": 0.95
+    }
+   },
+   "bias_structure": {
+    "struct_A": {
+     "trades": 3,
+     "win_rate": 0.0,
+     "avg_r": -0.689,
+     "total_r": -2.1,
+     "profit_factor": 0.0
+    },
+    "struct_B": {
+     "trades": 3,
+     "win_rate": 33.3,
+     "avg_r": 0.526,
+     "total_r": 1.6,
+     "profit_factor": 1.77
+    },
+    "3R_A": {
+     "trades": 3,
+     "win_rate": 0.0,
+     "avg_r": -0.689,
+     "total_r": -2.1,
+     "profit_factor": 0.0
+    }
+   },
+   "nested_flag": {
+    "struct_A": {
+     "trades": 12,
+     "win_rate": 8.3,
+     "avg_r": -0.258,
+     "total_r": -3.1,
+     "profit_factor": 0.51
+    },
+    "struct_B": {
+     "trades": 12,
+     "win_rate": 16.7,
+     "avg_r": -0.037,
+     "total_r": -0.4,
+     "profit_factor": 0.94
+    },
+    "3R_A": {
+     "trades": 12,
+     "win_rate": 16.7,
+     "avg_r": -0.026,
+     "total_r": -0.3,
+     "profit_factor": 0.95
+    }
+   },
+   "first_impulse_bias": {
+    "struct_A": {
+     "trades": 4,
+     "win_rate": 25.0,
+     "avg_r": 0.526,
+     "total_r": 2.1,
+     "profit_factor": 2.95
+    },
+    "struct_B": {
+     "trades": 4,
+     "win_rate": 25.0,
+     "avg_r": 0.276,
+     "total_r": 1.1,
+     "profit_factor": 1.53
+    },
+    "3R_A": {
+     "trades": 4,
+     "win_rate": 50.0,
+     "avg_r": 1.22,
+     "total_r": 4.9,
+     "profit_factor": 5.6
+    }
+   }
+  },
+  "2.0": {
+   "all": {
+    "struct_A": {
+     "trades": 20,
+     "win_rate": 5.0,
+     "avg_r": -0.446,
+     "total_r": -8.9,
+     "profit_factor": 0.26
+    },
+    "struct_B": {
+     "trades": 20,
+     "win_rate": 15.0,
+     "avg_r": -0.157,
+     "total_r": -3.1,
+     "profit_factor": 0.78
+    },
+    "3R_A": {
+     "trades": 20,
+     "win_rate": 15.0,
+     "avg_r": -0.157,
+     "total_r": -3.1,
+     "profit_factor": 0.74
+    }
+   },
+   "touch3_top": {
+    "struct_A": {
+     "trades": 5,
+     "win_rate": 0.0,
+     "avg_r": -0.667,
+     "total_r": -3.3,
+     "profit_factor": 0.0
+    },
+    "struct_B": {
+     "trades": 5,
+     "win_rate": 20.0,
+     "avg_r": 0.158,
+     "total_r": 0.8,
+     "profit_factor": 1.24
+    },
+    "3R_A": {
+     "trades": 5,
+     "win_rate": 20.0,
+     "avg_r": -0.067,
+     "total_r": -0.3,
+     "profit_factor": 0.9
+    }
+   },
+   "first_entry": {
+    "struct_A": {
+     "trades": 4,
+     "win_rate": 25.0,
+     "avg_r": 0.496,
+     "total_r": 2.0,
+     "profit_factor": 2.72
+    },
+    "struct_B": {
+     "trades": 4,
+     "win_rate": 25.0,
+     "avg_r": 0.246,
+     "total_r": 1.0,
+     "profit_factor": 1.46
+    },
+    "3R_A": {
+     "trades": 4,
+     "win_rate": 50.0,
+     "avg_r": 1.191,
+     "total_r": 4.8,
+     "profit_factor": 5.24
+    }
+   },
+   "re_entry": {
+    "struct_A": {
+     "trades": 16,
+     "win_rate": 0.0,
+     "avg_r": -0.681,
+     "total_r": -10.9,
+     "profit_factor": 0.0
+    },
+    "struct_B": {
+     "trades": 16,
+     "win_rate": 12.5,
+     "avg_r": -0.258,
+     "total_r": -4.1,
+     "profit_factor": 0.65
+    },
+    "3R_A": {
+     "trades": 16,
+     "win_rate": 6.2,
+     "avg_r": -0.493,
+     "total_r": -7.9,
+     "profit_factor": 0.27
+    }
+   },
+   "bias_impulse": {
+    "struct_A": {
+     "trades": 17,
+     "win_rate": 5.9,
+     "avg_r": -0.399,
+     "total_r": -6.8,
+     "profit_factor": 0.32
+    },
+    "struct_B": {
+     "trades": 17,
+     "win_rate": 11.8,
+     "avg_r": -0.274,
+     "total_r": -4.7,
+     "profit_factor": 0.61
+    },
+    "3R_A": {
+     "trades": 17,
+     "win_rate": 17.6,
+     "avg_r": -0.059,
+     "total_r": -1.0,
+     "profit_factor": 0.9
+    }
+   },
+   "bias_structure": {
+    "struct_A": {
+     "trades": 3,
+     "win_rate": 0.0,
+     "avg_r": -0.711,
+     "total_r": -2.1,
+     "profit_factor": 0.0
+    },
+    "struct_B": {
+     "trades": 3,
+     "win_rate": 33.3,
+     "avg_r": 0.504,
+     "total_r": 1.5,
+     "profit_factor": 1.72
+    },
+    "3R_A": {
+     "trades": 3,
+     "win_rate": 0.0,
+     "avg_r": -0.711,
+     "total_r": -2.1,
+     "profit_factor": 0.0
+    }
+   },
+   "nested_flag": {
+    "struct_A": {
+     "trades": 12,
+     "win_rate": 8.3,
+     "avg_r": -0.284,
+     "total_r": -3.4,
+     "profit_factor": 0.48
+    },
+    "struct_B": {
+     "trades": 12,
+     "win_rate": 16.7,
+     "avg_r": -0.063,
+     "total_r": -0.8,
+     "profit_factor": 0.9
+    },
+    "3R_A": {
+     "trades": 12,
+     "win_rate": 16.7,
+     "avg_r": -0.052,
+     "total_r": -0.6,
+     "profit_factor": 0.9
+    }
+   },
+   "first_impulse_bias": {
+    "struct_A": {
+     "trades": 4,
+     "win_rate": 25.0,
+     "avg_r": 0.496,
+     "total_r": 2.0,
+     "profit_factor": 2.72
+    },
+    "struct_B": {
+     "trades": 4,
+     "win_rate": 25.0,
+     "avg_r": 0.246,
+     "total_r": 1.0,
+     "profit_factor": 1.46
+    },
+    "3R_A": {
+     "trades": 4,
+     "win_rate": 50.0,
+     "avg_r": 1.191,
+     "total_r": 4.8,
+     "profit_factor": 5.24
+    }
+   }
+  }
+ }
+}
