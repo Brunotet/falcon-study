@@ -1,0 +1,43 @@
+name: Falcon v11 5m backtest
+
+on:
+  workflow_dispatch:
+    inputs:
+      src:
+        description: "deriv | forex | indices"
+        default: deriv
+      symbols:
+        default: JD10,JD75,JD100,1HZ75V,1HZ150V
+      label:
+        default: v11-deriv
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    env:
+      SRC: ${{ inputs.src }}
+      SYMBOLS: ${{ inputs.symbols }}
+      LABEL: ${{ inputs.label }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install websocket-client pandas numpy matplotlib yfinance
+      - name: Backtest and draw entries
+        run: |
+          mkdir -p results
+          rm -rf "results/charts-$LABEL"
+          cd engine && python falcon_v11.py "$SRC" "$SYMBOLS" "../results/charts-$LABEL" 6 | tee "../results/$LABEL.json"
+      - name: Commit results
+        if: always()
+        run: |
+          git config user.name "falcon-bot"
+          git config user.email "falcon-bot@users.noreply.github.com"
+          git add results
+          git diff --cached --quiet || git commit -m "falcon v11 backtest: $LABEL"
+          git pull --rebase origin main || true
+          git push
