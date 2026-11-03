@@ -1,0 +1,665 @@
+{
+ "ES=F": {
+  "candles": 13685,
+  "A_trend_rsi_pullback": {
+   "all": {
+    "trades": 208,
+    "win_rate": 47.6,
+    "avg_r": -0.094,
+    "profit_factor": 0.83
+   },
+   "first_half": {
+    "trades": 99,
+    "win_rate": 49.5,
+    "avg_r": -0.061,
+    "profit_factor": 0.88
+   },
+   "second_half": {
+    "trades": 109,
+    "win_rate": 45.9,
+    "avg_r": -0.123,
+    "profit_factor": 0.78
+   }
+  },
+  "B_macd_rsi": {
+   "all": {
+    "trades": 350,
+    "win_rate": 32.0,
+    "avg_r": -0.097,
+    "profit_factor": 0.86
+   },
+   "first_half": {
+    "trades": 173,
+    "win_rate": 32.9,
+    "avg_r": -0.069,
+    "profit_factor": 0.9
+   },
+   "second_half": {
+    "trades": 177,
+    "win_rate": 31.1,
+    "avg_r": -0.124,
+    "profit_factor": 0.83
+   }
+  },
+  "C_bollinger_rsi_mr": {
+   "all": {
+    "trades": 331,
+    "win_rate": 46.8,
+    "avg_r": -0.05,
+    "profit_factor": 0.91
+   },
+   "first_half": {
+    "trades": 172,
+    "win_rate": 46.5,
+    "avg_r": -0.015,
+    "profit_factor": 0.97
+   },
+   "second_half": {
+    "trades": 159,
+    "win_rate": 47.2,
+    "avg_r": -0.088,
+    "profit_factor": 0.83
+   }
+  },
+  "D_connors_rsi2": {
+   "all": {
+    "trades": 349,
+    "win_rate": 63.3,
+    "avg_r": 0.002,
+    "profit_factor": 1.01
+   },
+   "first_half": {
+    "trades": 171,
+    "win_rate": 61.4,
+    "avg_r": -0.026,
+    "profit_factor": 0.88
+   },
+   "second_half": {
+    "trades": 178,
+    "win_rate": 65.2,
+    "avg_r": 0.029,
+    "profit_factor": 1.18
+   }
+  }
+ },
+ "NQ=F": {
+  "candles": 13680,
+  "A_trend_rsi_pullback": {
+   "all": {
+    "trades": 200,
+    "win_rate": 51.0,
+    "avg_r": -0.024,
+    "profit_factor": 0.95
+   },
+   "first_half": {
+    "trades": 88,
+    "win_rate": 46.6,
+    "avg_r": -0.119,
+    "profit_factor": 0.79
+   },
+   "second_half": {
+    "trades": 112,
+    "win_rate": 54.5,
+    "avg_r": 0.051,
+    "profit_factor": 1.11
+   }
+  },
+  "B_macd_rsi": {
+   "all": {
+    "trades": 356,
+    "win_rate": 35.1,
+    "avg_r": 0.003,
+    "profit_factor": 1.0
+   },
+   "first_half": {
+    "trades": 168,
+    "win_rate": 35.1,
+    "avg_r": -0.006,
+    "profit_factor": 0.99
+   },
+   "second_half": {
+    "trades": 188,
+    "win_rate": 35.1,
+    "avg_r": 0.011,
+    "profit_factor": 1.02
+   }
+  },
+  "C_bollinger_rsi_mr": {
+   "all": {
+    "trades": 334,
+    "win_rate": 41.3,
+    "avg_r": -0.161,
+    "profit_factor": 0.72
+   },
+   "first_half": {
+    "trades": 169,
+    "win_rate": 40.8,
+    "avg_r": -0.149,
+    "profit_factor": 0.74
+   },
+   "second_half": {
+    "trades": 165,
+    "win_rate": 41.8,
+    "avg_r": -0.173,
+    "profit_factor": 0.7
+   }
+  },
+  "D_connors_rsi2": {
+   "all": {
+    "trades": 331,
+    "win_rate": 65.0,
+    "avg_r": 0.008,
+    "profit_factor": 1.04
+   },
+   "first_half": {
+    "trades": 168,
+    "win_rate": 69.6,
+    "avg_r": 0.045,
+    "profit_factor": 1.26
+   },
+   "second_half": {
+    "trades": 163,
+    "win_rate": 60.1,
+    "avg_r": -0.03,
+    "profit_factor": 0.86
+   }
+  }
+ },
+ "YM=F": {
+  "candles": 13675,
+  "A_trend_rsi_pullback": {
+   "all": {
+    "trades": 211,
+    "win_rate": 52.1,
+    "avg_r": -0.002,
+    "profit_factor": 1.0
+   },
+   "first_half": {
+    "trades": 102,
+    "win_rate": 50.0,
+    "avg_r": -0.047,
+    "profit_factor": 0.91
+   },
+   "second_half": {
+    "trades": 109,
+    "win_rate": 54.1,
+    "avg_r": 0.039,
+    "profit_factor": 1.08
+   }
+  },
+  "B_macd_rsi": {
+   "all": {
+    "trades": 340,
+    "win_rate": 34.4,
+    "avg_r": -0.02,
+    "profit_factor": 0.97
+   },
+   "first_half": {
+    "trades": 177,
+    "win_rate": 33.3,
+    "avg_r": -0.054,
+    "profit_factor": 0.92
+   },
+   "second_half": {
+    "trades": 163,
+    "win_rate": 35.6,
+    "avg_r": 0.017,
+    "profit_factor": 1.03
+   }
+  },
+  "C_bollinger_rsi_mr": {
+   "all": {
+    "trades": 348,
+    "win_rate": 42.8,
+    "avg_r": -0.087,
+    "profit_factor": 0.85
+   },
+   "first_half": {
+    "trades": 175,
+    "win_rate": 41.7,
+    "avg_r": -0.115,
+    "profit_factor": 0.8
+   },
+   "second_half": {
+    "trades": 173,
+    "win_rate": 43.9,
+    "avg_r": -0.059,
+    "profit_factor": 0.89
+   }
+  },
+  "D_connors_rsi2": {
+   "all": {
+    "trades": 352,
+    "win_rate": 57.7,
+    "avg_r": -0.013,
+    "profit_factor": 0.94
+   },
+   "first_half": {
+    "trades": 173,
+    "win_rate": 60.7,
+    "avg_r": 0.007,
+    "profit_factor": 1.04
+   },
+   "second_half": {
+    "trades": 179,
+    "win_rate": 54.7,
+    "avg_r": -0.034,
+    "profit_factor": 0.86
+   }
+  }
+ },
+ "RTY=F": {
+  "candles": 13704,
+  "A_trend_rsi_pullback": {
+   "all": {
+    "trades": 226,
+    "win_rate": 48.7,
+    "avg_r": -0.078,
+    "profit_factor": 0.86
+   },
+   "first_half": {
+    "trades": 121,
+    "win_rate": 46.3,
+    "avg_r": -0.128,
+    "profit_factor": 0.77
+   },
+   "second_half": {
+    "trades": 105,
+    "win_rate": 51.4,
+    "avg_r": -0.02,
+    "profit_factor": 0.96
+   }
+  },
+  "B_macd_rsi": {
+   "all": {
+    "trades": 346,
+    "win_rate": 28.6,
+    "avg_r": -0.192,
+    "profit_factor": 0.74
+   },
+   "first_half": {
+    "trades": 175,
+    "win_rate": 25.1,
+    "avg_r": -0.3,
+    "profit_factor": 0.62
+   },
+   "second_half": {
+    "trades": 171,
+    "win_rate": 32.2,
+    "avg_r": -0.081,
+    "profit_factor": 0.89
+   }
+  },
+  "C_bollinger_rsi_mr": {
+   "all": {
+    "trades": 316,
+    "win_rate": 49.7,
+    "avg_r": 0.056,
+    "profit_factor": 1.11
+   },
+   "first_half": {
+    "trades": 154,
+    "win_rate": 47.4,
+    "avg_r": -0.013,
+    "profit_factor": 0.97
+   },
+   "second_half": {
+    "trades": 162,
+    "win_rate": 51.9,
+    "avg_r": 0.121,
+    "profit_factor": 1.26
+   }
+  },
+  "D_connors_rsi2": {
+   "all": {
+    "trades": 332,
+    "win_rate": 61.7,
+    "avg_r": 0.009,
+    "profit_factor": 1.05
+   },
+   "first_half": {
+    "trades": 168,
+    "win_rate": 64.9,
+    "avg_r": 0.022,
+    "profit_factor": 1.11
+   },
+   "second_half": {
+    "trades": 164,
+    "win_rate": 58.5,
+    "avg_r": -0.004,
+    "profit_factor": 0.98
+   }
+  }
+ },
+ "^GDAXI": {
+  "candles": 6544,
+  "A_trend_rsi_pullback": {
+   "all": {
+    "trades": 107,
+    "win_rate": 59.8,
+    "avg_r": 0.147,
+    "profit_factor": 1.35
+   },
+   "first_half": {
+    "trades": 55,
+    "win_rate": 60.0,
+    "avg_r": 0.146,
+    "profit_factor": 1.35
+   },
+   "second_half": {
+    "trades": 52,
+    "win_rate": 59.6,
+    "avg_r": 0.148,
+    "profit_factor": 1.35
+   }
+  },
+  "B_macd_rsi": {
+   "all": {
+    "trades": 175,
+    "win_rate": 42.3,
+    "avg_r": 0.216,
+    "profit_factor": 1.36
+   },
+   "first_half": {
+    "trades": 86,
+    "win_rate": 39.5,
+    "avg_r": 0.124,
+    "profit_factor": 1.19
+   },
+   "second_half": {
+    "trades": 89,
+    "win_rate": 44.9,
+    "avg_r": 0.305,
+    "profit_factor": 1.53
+   }
+  },
+  "C_bollinger_rsi_mr": {
+   "all": {
+    "trades": 144,
+    "win_rate": 46.5,
+    "avg_r": 0.034,
+    "profit_factor": 1.06
+   },
+   "first_half": {
+    "trades": 74,
+    "win_rate": 44.6,
+    "avg_r": 0.016,
+    "profit_factor": 1.03
+   },
+   "second_half": {
+    "trades": 70,
+    "win_rate": 48.6,
+    "avg_r": 0.052,
+    "profit_factor": 1.1
+   }
+  },
+  "D_connors_rsi2": {
+   "all": {
+    "trades": 161,
+    "win_rate": 57.8,
+    "avg_r": -0.034,
+    "profit_factor": 0.84
+   },
+   "first_half": {
+    "trades": 77,
+    "win_rate": 55.8,
+    "avg_r": -0.064,
+    "profit_factor": 0.74
+   },
+   "second_half": {
+    "trades": 84,
+    "win_rate": 59.5,
+    "avg_r": -0.007,
+    "profit_factor": 0.96
+   }
+  }
+ },
+ "^FTSE": {
+  "candles": 6517,
+  "A_trend_rsi_pullback": {
+   "all": {
+    "trades": 98,
+    "win_rate": 44.9,
+    "avg_r": -0.149,
+    "profit_factor": 0.74
+   },
+   "first_half": {
+    "trades": 52,
+    "win_rate": 42.3,
+    "avg_r": -0.207,
+    "profit_factor": 0.66
+   },
+   "second_half": {
+    "trades": 46,
+    "win_rate": 47.8,
+    "avg_r": -0.084,
+    "profit_factor": 0.84
+   }
+  },
+  "B_macd_rsi": {
+   "all": {
+    "trades": 172,
+    "win_rate": 34.3,
+    "avg_r": -0.018,
+    "profit_factor": 0.97
+   },
+   "first_half": {
+    "trades": 73,
+    "win_rate": 30.1,
+    "avg_r": -0.148,
+    "profit_factor": 0.8
+   },
+   "second_half": {
+    "trades": 99,
+    "win_rate": 37.4,
+    "avg_r": 0.078,
+    "profit_factor": 1.12
+   }
+  },
+  "C_bollinger_rsi_mr": {
+   "all": {
+    "trades": 120,
+    "win_rate": 49.2,
+    "avg_r": 0.084,
+    "profit_factor": 1.17
+   },
+   "first_half": {
+    "trades": 56,
+    "win_rate": 46.4,
+    "avg_r": -0.022,
+    "profit_factor": 0.96
+   },
+   "second_half": {
+    "trades": 64,
+    "win_rate": 51.6,
+    "avg_r": 0.176,
+    "profit_factor": 1.38
+   }
+  },
+  "D_connors_rsi2": {
+   "all": {
+    "trades": 154,
+    "win_rate": 57.1,
+    "avg_r": -0.009,
+    "profit_factor": 0.96
+   },
+   "first_half": {
+    "trades": 73,
+    "win_rate": 49.3,
+    "avg_r": -0.09,
+    "profit_factor": 0.66
+   },
+   "second_half": {
+    "trades": 81,
+    "win_rate": 64.2,
+    "avg_r": 0.064,
+    "profit_factor": 1.4
+   }
+  }
+ },
+ "^N225": {
+  "candles": 5088,
+  "A_trend_rsi_pullback": {
+   "all": {
+    "trades": 89,
+    "win_rate": 56.2,
+    "avg_r": 0.079,
+    "profit_factor": 1.17
+   },
+   "first_half": {
+    "trades": 40,
+    "win_rate": 52.5,
+    "avg_r": -0.006,
+    "profit_factor": 0.99
+   },
+   "second_half": {
+    "trades": 49,
+    "win_rate": 59.2,
+    "avg_r": 0.149,
+    "profit_factor": 1.35
+   }
+  },
+  "B_macd_rsi": {
+   "all": {
+    "trades": 142,
+    "win_rate": 38.7,
+    "avg_r": 0.1,
+    "profit_factor": 1.16
+   },
+   "first_half": {
+    "trades": 71,
+    "win_rate": 28.2,
+    "avg_r": -0.218,
+    "profit_factor": 0.71
+   },
+   "second_half": {
+    "trades": 71,
+    "win_rate": 49.3,
+    "avg_r": 0.419,
+    "profit_factor": 1.8
+   }
+  },
+  "C_bollinger_rsi_mr": {
+   "all": {
+    "trades": 140,
+    "win_rate": 38.6,
+    "avg_r": 0.019,
+    "profit_factor": 1.03
+   },
+   "first_half": {
+    "trades": 72,
+    "win_rate": 38.9,
+    "avg_r": 0.094,
+    "profit_factor": 1.15
+   },
+   "second_half": {
+    "trades": 68,
+    "win_rate": 38.2,
+    "avg_r": -0.062,
+    "profit_factor": 0.9
+   }
+  },
+  "D_connors_rsi2": {
+   "all": {
+    "trades": 158,
+    "win_rate": 63.9,
+    "avg_r": 0.028,
+    "profit_factor": 1.16
+   },
+   "first_half": {
+    "trades": 71,
+    "win_rate": 59.2,
+    "avg_r": 0.05,
+    "profit_factor": 1.33
+   },
+   "second_half": {
+    "trades": 87,
+    "win_rate": 67.8,
+    "avg_r": 0.01,
+    "profit_factor": 1.05
+   }
+  }
+ },
+ "POOLED": {
+  "A_trend_rsi_pullback": {
+   "all": {
+    "trades": 1139,
+    "win_rate": 50.8,
+    "avg_r": -0.03,
+    "profit_factor": 0.94
+   },
+   "first_half": {
+    "trades": 557,
+    "win_rate": 49.0,
+    "avg_r": -0.071,
+    "profit_factor": 0.87
+   },
+   "second_half": {
+    "trades": 582,
+    "win_rate": 52.6,
+    "avg_r": 0.009,
+    "profit_factor": 1.02
+   }
+  },
+  "B_macd_rsi": {
+   "all": {
+    "trades": 1881,
+    "win_rate": 34.1,
+    "avg_r": -0.03,
+    "profit_factor": 0.96
+   },
+   "first_half": {
+    "trades": 923,
+    "win_rate": 32.0,
+    "avg_r": -0.098,
+    "profit_factor": 0.86
+   },
+   "second_half": {
+    "trades": 958,
+    "win_rate": 36.1,
+    "avg_r": 0.035,
+    "profit_factor": 1.05
+   }
+  },
+  "C_bollinger_rsi_mr": {
+   "all": {
+    "trades": 1733,
+    "win_rate": 45.0,
+    "avg_r": -0.038,
+    "profit_factor": 0.93
+   },
+   "first_half": {
+    "trades": 872,
+    "win_rate": 43.8,
+    "avg_r": -0.049,
+    "profit_factor": 0.91
+   },
+   "second_half": {
+    "trades": 861,
+    "win_rate": 46.1,
+    "avg_r": -0.026,
+    "profit_factor": 0.95
+   }
+  },
+  "D_connors_rsi2": {
+   "all": {
+    "trades": 1837,
+    "win_rate": 61.3,
+    "avg_r": -0.0,
+    "profit_factor": 1.0
+   },
+   "first_half": {
+    "trades": 901,
+    "win_rate": 61.8,
+    "avg_r": 0.0,
+    "profit_factor": 1.0
+   },
+   "second_half": {
+    "trades": 936,
+    "win_rate": 60.8,
+    "avg_r": -0.001,
+    "profit_factor": 0.99
+   }
+  }
+ }
+}
