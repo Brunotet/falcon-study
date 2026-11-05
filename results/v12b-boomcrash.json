@@ -1,0 +1,177 @@
+{
+ "BOOM1000": {
+  "candles": 30000,
+  "costs": {
+   "1.0": {}
+  },
+  "funnel": {
+   "sell": {
+    "bars": 30000,
+    "bias_bars": 16765,
+    "channel_bars": 8126,
+    "zone_bars": 11
+   },
+   "buy": {
+    "bars": 30000,
+    "bias_bars": 18806,
+    "channel_bars": 6264,
+    "zone_bars": 30
+   }
+  },
+  "rejects": {
+   "if s0 >= j or s0 <= used or l[j] > l[j - L": 53422,
+   "if tz < 0 or s0 - tz > p['move_max']": 4610,
+   "if b is None": 178,
+   "if fh >= h[s0] or fl < l[j] - 0.1 * size": 64,
+   "if not (p['ret_lo'] <= ret <= p['ret_hi'])": 318,
+   "if risk > p['max_stop']": 20,
+   "if not l[j] < bos": 61,
+   "if entry - S['low'] < p['target_r'] * risk * pip": 2,
+   "if not (h[tz": 26,
+   "if np.mean(c[s0": 26
+  }
+ },
+ "BOOM500": {
+  "candles": 30000,
+  "costs": {
+   "1.0": {}
+  },
+  "funnel": {
+   "sell": {
+    "bars": 30000,
+    "bias_bars": 15420,
+    "channel_bars": 8533,
+    "zone_bars": 40
+   },
+   "buy": {
+    "bars": 30000,
+    "bias_bars": 17580,
+    "channel_bars": 6096,
+    "zone_bars": 4
+   }
+  },
+  "rejects": {
+   "if s0 >= j or s0 <= used or l[j] > l[j - L": 53925,
+   "if tz < 0 or s0 - tz > p['move_max']": 4158,
+   "if not l[j] < bos": 35,
+   "if b is None": 203,
+   "if not (h[tz": 91
+  }
+ },
+ "BOOM300N": {
+  "candles": 30000,
+  "costs": {
+   "1.0": {}
+  },
+  "funnel": {
+   "sell": {
+    "bars": 30000,
+    "bias_bars": 18685,
+    "channel_bars": 4908,
+    "zone_bars": 6
+   },
+   "buy": {
+    "bars": 30000,
+    "bias_bars": 13909,
+    "channel_bars": 8329,
+    "zone_bars": 20
+   }
+  },
+  "rejects": {
+   "if tz < 0 or s0 - tz > p['move_max']": 4428,
+   "if s0 >= j or s0 <= used or l[j] > l[j - L": 53816,
+   "if b is None": 124,
+   "if np.mean(c[s0": 43,
+   "if not l[j] < bos": 1
+  }
+ },
+ "CRASH1000": {
+  "candles": 30000,
+  "costs": {
+   "1.0": {}
+  },
+  "funnel": {
+   "sell": {
+    "bars": 30000,
+    "bias_bars": 17955,
+    "channel_bars": 7453,
+    "zone_bars": 27
+   },
+   "buy": {
+    "bars": 30000,
+    "bias_bars": 17556,
+    "channel_bars": 6998,
+    "zone_bars": 26
+   }
+  },
+  "rejects": {
+   "if s0 >= j or s0 <= used or l[j] > l[j - L": 53369,
+   "if b is None": 211,
+   "if np.mean(c[s0": 15,
+   "if tz < 0 or s0 - tz > p['move_max']": 4559,
+   "if not (h[tz": 238,
+   "if not l[j] < bos": 20
+  }
+ },
+ "CRASH500": {
+  "candles": 30000,
+  "costs": {
+   "1.0": {}
+  },
+  "funnel": {
+   "sell": {
+    "bars": 30000,
+    "bias_bars": 17104,
+    "channel_bars": 5895,
+    "zone_bars": 11
+   },
+   "buy": {
+    "bars": 30000,
+    "bias_bars": 15831,
+    "channel_bars": 7044,
+    "zone_bars": 6
+   }
+  },
+  "rejects": {
+   "if s0 >= j or s0 <= used or l[j] > l[j - L": 54006,
+   "if tz < 0 or s0 - tz > p['move_max']": 4160,
+   "if b is None": 104,
+   "if np.mean(c[s0": 16,
+   "if not l[j] < bos": 22,
+   "if fh >= h[s0] or fl < l[j] - 0.1 * size": 87,
+   "if not (p['ret_lo'] <= ret <= p['ret_hi'])": 51,
+   "if entry - S['low'] < p['target_r'] * risk * pip": 4,
+   "if risk > p['max_stop']": 3,
+   "if not (h[tz": 10
+  }
+ },
+ "CRASH300N": {
+  "candles": 30000,
+  "costs": {
+   "1.0": {}
+  },
+  "funnel": {
+   "sell": {
+    "bars": 30000,
+    "bias_bars": 15638,
+    "channel_bars": 7429,
+    "zone_bars": 12
+   },
+   "buy": {
+    "bars": 30000,
+    "bias_bars": 16108,
+    "channel_bars": 6516,
+    "zone_bars": 8
+   }
+  },
+  "rejects": {
+   "if s0 >= j or s0 <= used or l[j] > l[j - L": 54137,
+   "if tz < 0 or s0 - tz > p['move_max']": 4178,
+   "if b is None": 70,
+   "if entry - S['low'] < p['target_r'] * risk * pip": 10,
+   "if fh >= h[s0] or fl < l[j] - 0.1 * size": 14,
+   "if not l[j] < bos": 3
+  }
+ },
+ "POOLED": {}
+}
