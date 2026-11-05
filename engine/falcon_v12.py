@@ -24,7 +24,27 @@ chart_src = (inspect.getsource(v10.chart).replace('resample("1D")', "resample(TF
 chart_src = chart_src.replace("days=3))]; v9.candles(ax[0]", "days=1))]; v9.candles(ax[0]")
 run_src = re.sub(r'if row\["ok"\] and "fill" in row: rows\.append\(row\)\s*\n\s*used = j; break', 'if row["ok"] and "fill" in row:\n                    rows.append(row); used = j; break', inspect.getsource(v10.run))
 assert run_src != inspect.getsource(v10.run), "run patch failed"
-exec(chan_src, ns); exec(bias_src, ns); exec(chart_src, ns); exec(run_src, ns)   # FIX: a flag order cancelled before filling no longer kills the setup; the next, longer flag window is tried
+import collections
+_L = run_src.split("\n"); _j = [k for k, x in enumerate(_L) if "for j in range(W" in x][0]; _o = []
+for k, x in enumerate(_L):
+    if k > _j and ("continue" in x or "break" in x):
+        key = re.sub(r"[^A-Za-z0-9_<>=\[\]\"\.\(\)\* +-]", "", x.split(":")[0].strip())[:80].replace('"', "'")
+        x = x.replace("continue", f'CNT["{key}"] += 1; continue').replace("break", f'CNT["{key}"] += 1; break')
+    _o.append(x)
+ns["CNT"] = collections.Counter()
+exec(chan_src, ns); exec(bias_src, ns); exec(chart_src, ns); exec("\n".join(_o), ns)   # FIX: a flag order cancelled before filling no longer kills the setup; the next, longer flag window is tried
+
+def funnel(df):
+    p = dict(v10.P); res = {}
+    for side, sg in (("sell", 1), ("buy", -1)):
+        mm, at4 = v10.chan(df, sg); md, atd = v10.bias_fn(df, sg, p); h = df.high.values if sg > 0 else -df.low.values; nb = nc = nz = 0
+        for i in range(len(df)):
+            b = atd(md[i]); s = at4(mm[i]); nb += b is not None; nc += s is not None
+            if s and b:
+                up = s["U"][1] + s["U"][2] * (i - s["U"][0])
+                if up - s["tol"] <= h[i] <= up + p["over"] * s["atr"]: nz += 1
+        res[side] = dict(bars=len(df), bias_bars=nb, channel_bars=nc, zone_bars=nz)
+    return res
 
 if __name__ == "__main__":
     src, syms = sys.argv[1], sys.argv[2].split(","); cdir = sys.argv[3] if len(sys.argv) > 3 else None; maxc = int(sys.argv[4]) if len(sys.argv) > 4 else 6
@@ -35,11 +55,11 @@ if __name__ == "__main__":
             try: df = v11.load5(src, sym); break
             except Exception as e: err = str(e)[:120]; time.sleep(20 * (att + 1))
         if df is None or len(df) < 5000: out[sym] = {"error": err if df is None else f"too little data {len(df)}"}; continue
-        pip = float(np.median((df.high - df.low).values)) / 12.0; out[sym] = {"candles": len(df), "costs": {}}
+        pip = float(np.median((df.high - df.low).values)) / 12.0; out[sym] = {"candles": len(df), "costs": {}, "funnel": funnel(df)}; ns["CNT"].clear()
         for sp in (1.0, 2.0):
             t = v11.add_filters(df, v10.run(df, sym, sp, pip, False)); pool.setdefault(str(sp), []).append(t)
             if sp == 1.0:
-                out[sym]["costs"]["1.0"] = v11.table(t)
+                out[sym]["costs"]["1.0"] = v11.table(t); out[sym]["rejects"] = dict(ns["CNT"])
                 if len(t): alltr.append(t.drop(columns=["lpU", "lpL", "dq"]))
                 if cdir and len(t):
                     os.makedirs(cdir, exist_ok=True)
