@@ -1,0 +1,39 @@
+{
+ "BOOM1000": {
+  "candles": 30000,
+  "costs": {
+   "1.0": {}
+  }
+ },
+ "BOOM500": {
+  "candles": 30000,
+  "costs": {
+   "1.0": {}
+  }
+ },
+ "BOOM300N": {
+  "candles": 30000,
+  "costs": {
+   "1.0": {}
+  }
+ },
+ "CRASH1000": {
+  "candles": 30000,
+  "costs": {
+   "1.0": {}
+  }
+ },
+ "CRASH500": {
+  "candles": 30000,
+  "costs": {
+   "1.0": {}
+  }
+ },
+ "CRASH300N": {
+  "candles": 30000,
+  "costs": {
+   "1.0": {}
+  }
+ },
+ "POOLED": {}
+}
